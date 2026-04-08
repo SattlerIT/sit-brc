@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>S-IT-BRC – Backup • Restore • Cleanup</title>
+<link rel="icon" type="image/x-icon" href="s-it-icon140.ico">
+<style>
+body {
+  font-family: Segoe UI, Arial, sans-serif;
+  margin: 0;
+  background: #f4f6f8;
+  color: #2c3e50;
+}
+header {
+  background: #2c3e50;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+header h1 {
+  margin: 0;
+  font-size: 42px;
+}
+header p {
+  font-size: 20px;
+  margin-top: 10px;
+  color: #ecf0f1;
+}
+.download-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 14px 28px;
+  background: #27ae60;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  font-size: 16px;
+}
+.download-btn:hover {
+  background: #219150;
+}
+section {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px;
+}
+h2 {
+  font-size: 24px;
+  color: #2c3e50;
+  border-bottom: 3px solid #3498db;
+  padding-bottom: 8px;
+  margin-bottom: 24px;
+}
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+.card h3 {
+  margin-top: 0;
+  color: #2c3e50;
+}
+.card .icon {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 20px;
+}
+.gallery img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+}
+.paypal-box {
+  background: #ebf5fb;
+  border-radius: 8px;
+  padding: 32px 20px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  margin-top: 20px;
+}
+.paypal-box p {
+  color: #7f8c8d;
+  margin-bottom: 16px;
+  font-size: 15px;
+}
+.paypal-btn {
+  display: inline-block;
+  background: #009CDE;
+  color: white;
+  font-weight: 700;
+  font-size: 15px;
+  padding: 12px 32px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+.paypal-btn:hover {
+  background: #0080b8;
+}
+.paypal-mail {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #95a5a6;
+}
+footer {
+  background: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  font-size: 13px;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>S-IT-BRC</h1>
+  <p>Backup &bull; Restore &bull; Cleanup &nbsp;&ndash;&nbsp; Benutzerdaten sichern und wiederherstellen</p>
+  <a class="download-btn" href="https://github.com/SattlerIT/sit-brc/releases">
+    ⬇ Download aktuelle Version
+  </a>
+</header>
+
+<section>
+  <h2>Leistungsmerkmale</h2>
+  <div class="features">
+    <div class="card">
+      <div class="icon">💾</div>
+      <h3>Backup</h3>
+      <p>Sichert persönliche Benutzerdaten (Desktop, Dokumente, Bilder, Musik, Videos, Downloads, AppData) auf ein externes Laufwerk – inkrementell oder als vollständiges Archiv.</p>
+    </div>
+    <div class="card">
+      <div class="icon">🔄</div>
+      <h3>Restore</h3>
+      <p>Stellt Daten aus einem Backup wieder her – wahlweise in die Originalordner, in ein frei wählbares Zielverzeichnis oder auf einen anderen PC.</p>
+    </div>
+    <div class="card">
+      <div class="icon">🧹</div>
+      <h3>Cleanup</h3>
+      <p>Bereinigt inkrementelle Backups von veralteten Dateien. Simulation vor dem echten Lauf möglich. Gelöschte Dateien werden sicher in einen Archivordner verschoben, nicht gelöscht.</p>
+    </div>
+    <div class="card">
+      <div class="icon">📋</div>
+      <h3>Log & Protokoll</h3>
+      <p>Alle Vorgänge werden protokolliert. Log-Dateien direkt aus dem Programm abrufbar. Backup-INI sichert Originalpfade für spätere Restore-Vorgänge.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Screenshots</h2>
+  <div class="gallery">
+    <img src="screenshot-brc.png" alt="S-IT-BRC Startoberfläche">
+    <img src="screenshot-backup.png" alt="S-IT-Backup">
+    <img src="screenshot-restore.png" alt="S-IT-Restore">
+    <img src="screenshot-cleanup.png" alt="S-IT-Cleanup">
+  </div>
+</section>
+
+<section>
+  <h2>Download &amp; Dokumentation</h2>
+  <p>
+    Die aktuelle Version, Hilfe-Dateien und Changelog findest du im
+    <a href="https://github.com/SattlerIT/sit-brc/releases">Release-Bereich</a>.
+  </p>
+</section>
+
+<section>
+  <h2>Systemanforderungen</h2>
+  <div class="features">
+    <div class="card">
+      <h3>Betriebssystem</h3>
+      <p>Windows 10 und Windows 11 (64-Bit)</p>
+    </div>
+    <div class="card">
+      <h3>Rechte</h3>
+      <p>Administratorrechte werden beim Programmstart automatisch angefordert.</p>
+    </div>
+    <div class="card">
+      <h3>Lieferumfang</h3>
+      <p>Setup, Deinstaller und Hilfe-Dateien für alle drei Module enthalten.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Neu in Version 1.4.0</h2>
+  <div class="features">
+    <div class="card">
+      <h3>Einheitliches Versionsschema</h3>
+      <p>Alle Module (Backup, Restore, Cleanup, Launcher) tragen ab sofort eine gemeinsame Versionsnummer für klare Übersicht.</p>
+    </div>
+    <div class="card">
+      <h3>Setup &amp; Deinstaller</h3>
+      <p>Professionelle Installation mit Verknüpfungen, Startmenü-Eintrag und Eintrag in Windows Programme &amp; Features. Portabel-Modus für USB-Sticks ebenfalls verfügbar.</p>
+    </div>
+    <div class="card">
+      <h3>Hilfe-Dateien</h3>
+      <p>Alle drei Module verfügen über ausführliche HTML-Hilfe-Dateien, direkt aus dem Programm abrufbar.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Kontakt / Impressum</h2>
+  <p>Hans Udo Sattler &nbsp;&middot;&nbsp; Sattler IT-Service &nbsp;&middot;&nbsp; Greifenstein &nbsp;&middot;&nbsp; Deutschland</p>
+
+  <div class="paypal-box">
+    <p style="font-size:17px; font-weight:600; color:#2c3e50; margin-bottom:8px;">
+      Hat Ihnen dieses Tool geholfen?</p>
+    <p>Die S-IT-BRC-Tools werden kostenlos entwickelt und gepflegt.<br>
+       Eine kleine Spende hilft dabei, die Tools weiterzuentwickeln. Herzlichen Dank! 🙏</p>
+    <a class="paypal-btn"
+       href="https://www.paypal.com/donate/?business=tool-entwicklung%40sattler-it.de&currency_code=EUR"
+       target="_blank">
+      ☕ Spende via PayPal
+    </a>
+    <p class="paypal-mail">tool-entwicklung@sattler-it.de</p>
+  </div>
+</section>
+
+<footer>
+  &copy; 2026 Hans Udo Sattler &nbsp;&middot;&nbsp; Sattler IT-Service, Greifenstein
+</footer>
+
+</body>
+</html>
