@@ -370,6 +370,9 @@
     <div class="mention-badge">
       📰 Besprochen bei <a href="https://www.deskmodder.de/blog/2026/04/09/s-it-brc-backup-programm-mit-backup-restore-und-auch-einem-cleanup-tool/" target="_blank">Deskmodder</a>
     </div>
+    <div class="mention-badge">
+      📦 Gelistet bei <a href="https://www.wintotal.de/download/s-it-brc/" target="_blank">WinTotal</a>
+    </div>
   </div>
 
   <h2 id="kontakt">Kontakt / Impressum</h2>
@@ -378,7 +381,7 @@
     <h3>Hat Ihnen dieses Tool geholfen?</h3>
     <p>Die S-IT-BRC-Tools werden kostenlos entwickelt und gepflegt.<br>Eine kleine Spende hilft dabei, die Tools weiterzuentwickeln. Herzlichen Dank! 🙏</p>
     <a class="btn-donate" href="https://www.paypal.com/donate/?business=tool-entwicklung%40sattler-it.de&currency_code=EUR">☕ Spende via PayPal</a>
-    <p style="margin-top:14px; font-size:13px;">tool-entwicklung@sattler-it.de</p>
+    <p style="margin-top:14px; font-size:13px;"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="ec98838380c18982989b858f878099828bac9f8d989880899ec18598c28889">[email&#160;protected]</a></p>
   </div>
 
 </main>
@@ -392,18 +395,11 @@
 <div class="lightbox-overlay" id="lightbox">
   <img id="lightbox-img" src="" alt="">
 </div>
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
   const overlay = document.getElementById('lightbox');
   const lbImg   = document.getElementById('lightbox-img');
   document.querySelectorAll('.screenshots img').forEach(img => {
     img.addEventListener('click', () => {
       lbImg.src = img.src;
       lbImg.alt = img.alt;
-      overlay.classList.add('active');
-    });
-  });
-  overlay.addEventListener('click', () => overlay.classList.remove('active'));
-  document.addEventListener('keydown', e => { if (e.key === 'Escape') overlay.classList.remove('active'); });
-</script>
-</body>
-</html>
+      overlay.classList.ad
