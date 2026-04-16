@@ -59,5 +59,5 @@ Eine Weitergabe oder Veränderung ist ohne ausdrückliche Genehmigung nicht gest
 **Sattler IT-Service**  
 Hans Udo Sattler · Greifenstein  
 kontakt@sattler-it.de  
-https://www.sattler-it.de
+http://sattler-it.de
 
