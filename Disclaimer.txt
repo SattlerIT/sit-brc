@@ -1,0 +1,50 @@
+============================================================
+ S-IT-BRC – Haftungsausschluss (Disclaimer)
+ © 2026 Sattler IT-Service, Greifenstein · Hans Udo Sattler
+============================================================
+
+Alle Angaben ohne Gewähr. Irrtümer vorbehalten.
+
+S-IT-BRC ist ein kostenloses Werkzeug zum Sichern (Backup),
+Wiederherstellen (Restore) und Aufräumen (Cleanup) von
+Benutzerdaten. Das Tool arbeitet nach bestem Wissen
+zuverlässig, eine fehlerfreie Funktion auf jedem System und in
+jeder Konstellation kann jedoch nicht zugesichert werden.
+
+1. Keine Zusicherung der Vollständigkeit
+   Backup- und Restore-Vorgänge sind keine Zusicherung dafür,
+   dass alle Dateien vollständig, unverändert und fehlerfrei
+   gesichert bzw. wiederhergestellt wurden. Netzwerkprobleme,
+   nicht erreichbare Laufwerke, gesperrte Dateien,
+   unzureichender Speicherplatz oder Systemfehler können
+   einzelne Vorgänge beeinträchtigen oder verhindern.
+
+2. Prüfen Sie Ihre Sicherungen
+   Ein erstelltes Backup ist erst dann verlässlich, wenn die
+   Wiederherstellung getestet wurde. Überzeugen Sie sich vor
+   dem Löschen oder Umschichten von Originaldaten selbst davon,
+   dass die gesicherten Daten vollständig und lesbar sind.
+
+3. Nutzung auf eigene Verantwortung
+   Die Verwendung des Tools erfolgt auf eigene Verantwortung.
+   Das gilt besonders für Restore-Vorgänge, die vorhandene
+   Dateien überschreiben, sowie für den Cleanup, der veraltete
+   Dateien in einen Archivordner verschiebt. Für Ergebnisse und
+   Entscheidungen, die auf Basis der Vorgänge oder Protokolle
+   getroffen werden, wird keine Verantwortung übernommen.
+
+4. Haftungsausschluss
+   Eine Haftung für Schäden, Datenverluste oder Vermögens-
+   schäden, die aus der Nutzung des Tools oder seiner Ergebnisse
+   entstehen, ist – soweit gesetzlich zulässig – ausgeschlossen.
+
+5. Backups bleiben unerlässlich
+   Verlassen Sie sich bei wichtigen Daten nicht allein auf eine
+   einzige Sicherung. Bewahren Sie unabhängig davon regelmäßig
+   mehrere, voneinander getrennte Sicherungskopien Ihrer Daten
+   an unterschiedlichen Orten auf.
+
+------------------------------------------------------------
+Kontakt:       tool-entwicklung@sattler-it.de
+Projektseite:  https://sattlerit.github.io/sit-brc/
+------------------------------------------------------------
