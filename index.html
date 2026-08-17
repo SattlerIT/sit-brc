@@ -197,10 +197,10 @@
   <div class="hero-inner">
     <div>
       <h1>Benutzerdaten sichern, wiederherstellen und aufr&auml;umen<br>&ndash; alles in einem Werkzeug</h1>
-      <p>S-IT-BRC sichert deine Benutzerdaten (Desktop, Dokumente, Bilder, Musik, Videos, Downloads, AppData) auf ein externes Laufwerk &ndash; inkrementell oder als vollst&auml;ndiges Archiv, mit OneDrive-Erkennung und bis zu f&uuml;nf frei w&auml;hlbaren Zusatzverzeichnissen. Restore stellt die Daten gezielt wieder her, Cleanup h&auml;lt inkrementelle Backups schlank &ndash; und alles wird nachvollziehbar protokolliert.</p>
-      <a href="https://github.com/SattlerIT/sit-brc/releases/download/v2.2.0/sit-brc_v2.2.0.zip" class="btn-download">⬇ Download v2.2.0</a>
+      <p>S-IT-BRC sichert deine Benutzerdaten (Desktop, Dokumente, Bilder, Musik, Videos, Downloads, AppData) auf ein externes Laufwerk &ndash; inkrementell oder als vollst&auml;ndiges Archiv, mit OneDrive-Erkennung und bis zu sieben frei w&auml;hlbaren Zusatzverzeichnissen. Neu in Version 3.0: <strong>Backup-Profile</strong> b&uuml;ndeln alle Einstellungen einer Sicherung, und die <strong>automatische Zeitsteuerung</strong> f&uuml;hrt sie nach Zeitplan im Hintergrund aus. Restore stellt die Daten gezielt wieder her &ndash; mit sichtbaren Zielpfaden &ndash;, Cleanup h&auml;lt inkrementelle Backups schlank, und alles wird nachvollziehbar protokolliert.</p>
+      <a href="https://github.com/SattlerIT/sit-brc/releases/download/v3.0.0/sit-brc_v3.0.0.zip" class="btn-download">⬇ Download v3.0.0</a>
       <a href="https://github.com/SattlerIT/sit-brc/releases" class="btn-secondary" style="margin-left:12px;">Alle Versionen</a>
-      <span class="btn-hint">Version 2.2.0 &middot; Das Paket enth&auml;lt Installer und Deinstaller f&uuml;r die saubere Windows-Integration &ndash; ein Portabel-Modus f&uuml;r USB-Sticks ist ebenfalls dabei.</span>
+      <span class="btn-hint">Version 3.0.0 &middot; Das Paket enth&auml;lt Installer und Deinstaller f&uuml;r die saubere Windows-Integration &ndash; ein Portabel-Modus f&uuml;r USB-Sticks ist ebenfalls dabei.</span>
     </div>
     <div class="hero-screenshot">
       <img src="screenshot-backup.png" alt="S-IT-BRC – Backup-Modul">
@@ -214,39 +214,59 @@
   <div class="section-title">⚙ Funktionen</div>
   <div class="cards">
     <div class="card">
+      <div class="card-icon">📋</div>
+      <h3>Backup-Profile <span class="badge-new">NEU</span></h3>
+      <p>Alle Einstellungen einer Sicherung &ndash; Ziellaufwerk, Modus, Ordnerauswahl, OneDrive, Zusatzverzeichnisse und Ausschl&uuml;sse &ndash; liegen in einem benannten Profil. Einmal einrichten, danach mit einem Klick w&auml;hlen.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">⏰</div>
+      <h3>Automatische Zeitsteuerung <span class="badge-new">NEU</span></h3>
+      <p>Sichert t&auml;glich, w&ouml;chentlich oder im Intervall &ndash; auf Wunsch still im Hintergrund. Verpasste Termine werden nachgeholt, gleichzeitig f&auml;llige reihen sich ein. Autostart und Betrieb im Infobereich inklusive.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">🧱</div>
+      <h3>Kopieren in Bl&ouml;cken <span class="badge-new">NEU</span></h3>
+      <p>Kopiert wird blockweise statt Datei am St&uuml;ck: STOPP wirkt sofort, auch mitten in einer sehr gro&szlig;en Datei. Abgebrochenes wird entfernt statt als Bruchst&uuml;ck liegenzubleiben, mit Anzeige von Geschwindigkeit und Restzeit.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">🚫</div>
+      <h3>Ausschl&uuml;sse &amp; Platzpr&uuml;fung <span class="badge-new">NEU</span></h3>
+      <p>Ausschlussliste je Profil mit 14 Vorgaben f&uuml;r Temp-Ordner, Caches und &Auml;hnliches, erweiterbar um eigene Muster. Vor jedem Lauf wird der freie Platz gepr&uuml;ft &ndash; bei Enge mit exaktem Fehlbetrag.</p>
+    </div>
+    <div class="card">
       <div class="card-icon">💾</div>
       <h3>Backup</h3>
-      <p>Sichert Benutzerdaten inkrementell oder als vollst&auml;ndiges Archiv auf ein externes Laufwerk. Mit OneDrive-Erkennung und bis zu 5 Zusatzverzeichnissen.</p>
+      <p>Sichert Benutzerdaten inkrementell oder als vollst&auml;ndiges Archiv auf ein externes Laufwerk. Mit OneDrive-Erkennung und bis zu 7 Zusatzverzeichnissen.</p>
     </div>
     <div class="card">
       <div class="card-icon">🔄</div>
-      <h3>Restore</h3>
-      <p>Stellt Daten aus einem Backup wieder her &ndash; in den Originalordner, ein freies Ziel oder auf ein anderes System. Backups von fremden Ger&auml;ten werden erkannt und gef&auml;hrliche Modi automatisch gesperrt.</p>
+      <h3>Restore mit sichtbaren Zielpfaden <span class="badge-new">NEU</span></h3>
+      <p>Jede Zeile zeigt den vollst&auml;ndigen Zielpfad, der live mitwechselt; Warnungen stehen direkt in der Zeile, ein Klick &ouml;ffnet den Ordner im Explorer. Eigene H&auml;ufig-Ziele lassen sich hinterlegen. Was angezeigt wird, ist genau das, was passiert.</p>
     </div>
     <div class="card">
       <div class="card-icon">🧹</div>
-      <h3>Cleanup</h3>
-      <p>Bereinigt inkrementelle Backups von veralteten Dateien. Simulationsmodus vor dem echten Lauf; veraltete Dateien werden sicher in einen Archivordner verschoben, nicht gel&ouml;scht.</p>
+      <h3>Cleanup mit Archiv-R&uuml;ckholung <span class="badge-new">NEU</span></h3>
+      <p>Bereinigt inkrementelle Backups von veralteten Dateien &ndash; verschoben in einen Archivordner, nicht gel&ouml;scht. Das Archiv wird im Programm angezeigt, einzelne Altdateien lassen sich gezielt zur&uuml;ckholen. Simulation und echter Lauf sind eine ausdr&uuml;ckliche Auswahl.</p>
     </div>
     <div class="card">
       <div class="card-icon">📁</div>
-      <h3>Zusatzverzeichnisse <span class="badge-new">NEU</span></h3>
-      <p>Bis zu 5 beliebige Ordner lassen sich zus&auml;tzlich sichern, wiederherstellen und bereinigen. Die Auswahl bleibt dauerhaft in der INI gespeichert.</p>
+      <h3>Zusatzverzeichnisse</h3>
+      <p>Bis zu 7 beliebige Ordner lassen sich zus&auml;tzlich sichern, wiederherstellen und bereinigen. Die Auswahl bleibt dauerhaft im Profil gespeichert.</p>
     </div>
     <div class="card">
       <div class="card-icon">☁️</div>
-      <h3>OneDrive-Erkennung <span class="badge-new">NEU</span></h3>
+      <h3>OneDrive-Erkennung</h3>
       <p>Auf OneDrive umgeleitete Ordner werden automatisch aus der Registry erkannt, orange hervorgehoben und korrekt gesichert.</p>
     </div>
     <div class="card">
       <div class="card-icon">🛡</div>
-      <h3>Fremdger&auml;t-Erkennung <span class="badge-new">NEU</span></h3>
+      <h3>Fremdger&auml;t-Erkennung</h3>
       <p>Backups von anderen PCs werden erkannt: Restore sperrt den &bdquo;Gleicher PC&ldquo;-Modus, Cleanup verhindert die versehentliche Bereinigung fremder Backups.</p>
     </div>
     <div class="card">
       <div class="card-icon">📋</div>
       <h3>Log &amp; Protokoll</h3>
-      <p>Jeder Vorgang wird protokolliert &ndash; pro Ordner mit Quelle, Neu/&Uuml;bersprungen und Gesamtz&auml;hler. Das Log ist direkt aus dem Programm abrufbar.</p>
+      <p>Jeder Vorgang wird protokolliert &ndash; pro Ordner mit Quelle, Ziel, Neu/&Uuml;bersprungen und Gesamtz&auml;hler. Das Log ist direkt aus dem Programm abrufbar.</p>
     </div>
     <div class="card">
       <div class="card-icon">🔍</div>
@@ -255,8 +275,8 @@
     </div>
     <div class="card">
       <div class="card-icon">🖥</div>
-      <h3>DPI-Skalierung &amp; HiDPI <span class="badge-new">NEU</span></h3>
-      <p>100&ndash;200&nbsp;% Skalierung &uuml;ber den ⚙ Ansicht-Button, mit automatischer Anpassung an die Bildschirmaufl&ouml;sung.</p>
+      <h3>DPI-Skalierung &amp; HiDPI</h3>
+      <p>90&ndash;200&nbsp;% Skalierung &uuml;ber den ⚙ Ansicht-Button, mit automatischer Anpassung an die Bildschirmaufl&ouml;sung. Fenstergr&ouml;&szlig;e und -position lassen sich merken.</p>
     </div>
   </div>
 
@@ -269,33 +289,16 @@
     </div>
     <div class="gallery-item" onclick="openLightbox(this)">
       <img src="screenshot-backup.png" alt="S-IT-BRC Backup-Modul">
-      <div class="gallery-caption">Backup &ndash; Benutzerdaten und Zusatzverzeichnisse sichern</div>
+      <div class="gallery-caption">Backup &ndash; Profile, Benutzerdaten und Zusatzverzeichnisse sichern</div>
     </div>
     <div class="gallery-item" onclick="openLightbox(this)">
       <img src="screenshot-restore.png" alt="S-IT-BRC Restore-Modul">
-      <div class="gallery-caption">Restore &ndash; gezielt wiederherstellen, mit Fremdger&auml;t-Erkennung</div>
+      <div class="gallery-caption">Restore &ndash; gezielt wiederherstellen, mit sichtbaren Zielpfaden</div>
     </div>
     <div class="gallery-item" onclick="openLightbox(this)">
       <img src="screenshot-cleanup.png" alt="S-IT-BRC Cleanup-Modul">
-      <div class="gallery-caption">Cleanup &ndash; inkrementelle Backups schlank halten, mit Simulation</div>
+      <div class="gallery-caption">Cleanup &ndash; inkrementelle Backups schlank halten, mit Archiv und R&uuml;ckholung</div>
     </div>
-  </div>
-
-  <!-- AUSBLICK -->
-  <div class="section-title">🔮 Ausblick auf die n&auml;chste Version</div>
-  <div class="outlook-box">
-    <div class="outlook-head">
-      <span style="font-size:22px;">🕐</span>
-      <strong>Automatische Zeitsteuerung</strong>
-      <span class="badge-plan">IN PLANUNG</span>
-    </div>
-    <p>F&uuml;r eine kommende Version ist eine automatische Zeitsteuerung geplant. Backup-Profile lassen sich dann nach Zeitplan im Hintergrund ausf&uuml;hren &ndash; einmal eingerichtet, l&auml;uft die Sicherung von allein:</p>
-    <ul>
-      <li>Zeitplan t&auml;glich, an bestimmten Wochentagen oder im festen Intervall</li>
-      <li>Silent-Modus: Automatische L&auml;ufe komplett ohne Fenster, nur bei echten Fehlern eine kurze Meldung</li>
-      <li>Betrieb in der Taskleiste (Tray) und optionaler Autostart mit Windows</li>
-    </ul>
-    <p>Die Umsetzung erfolgt nach dem bew&auml;hrten Muster aus <strong>S-IT-3Kopier</strong>. Der Unterschied: Bei S-IT-BRC bezieht sich der Zeitplan jeweils auf ein gespeichertes <strong>Backup-Profil</strong> statt auf Kopieraufträge. Diese Funktion ist in Version 2.2.0 noch nicht enthalten.</p>
   </div>
 
   <!-- DOWNLOAD -->
@@ -306,7 +309,7 @@
     <strong>Setup inklusive:</strong> Das Paket enth&auml;lt einen Installer und Deinstaller f&uuml;r die saubere Windows-Integration &ndash; inklusive Eintrag in der Systemsteuerung unter &bdquo;Programme und Features&ldquo;. Ein Portabel-Modus f&uuml;r USB-Sticks ist ebenfalls verf&uuml;gbar.
   </div>
   <div class="info-box">
-    <strong>Update von v1.x:</strong> Das Setup erkennt vorhandene Installationen automatisch. Einstellungen (INI-Dateien) bleiben erhalten. Das alte <code>x64_Progs</code>-Unterverzeichnis wird automatisch entfernt.
+    <strong>Update von Version 2.x:</strong> Das Setup erkennt vorhandene Installationen automatisch. Backup-Profile, eigene Restore-Ziele, Zeitpl&auml;ne und Einstellungen bleiben erhalten. L&auml;uft das Programm noch im Infobereich, weist das Setup darauf hin und bietet an, es zu beenden.
   </div>
 
   <!-- SYSTEMANFORDERUNGEN -->
@@ -330,6 +333,19 @@
   <!-- CHANGELOG -->
   <div class="section-title">📋 Changelog</div>
   <div class="changelog">
+    <div class="changelog-entry">
+      <div class="changelog-version">v3.0.0 <span>Profile, Zeitsteuerung &amp; &uuml;berarbeiteter Restore</span></div>
+      <ul>
+        <li><strong>Backup-Profile:</strong> alle Einstellungen einer Sicherung in einem benannten Profil &ndash; Ziellaufwerk, Modus, Ordnerauswahl, OneDrive, Zusatzverzeichnisse und Ausschl&uuml;sse. Beim ersten Start entsteht automatisch ein Profil &bdquo;Standard&ldquo; aus den vorhandenen Einstellungen</li>
+        <li><strong>Automatische Zeitsteuerung:</strong> t&auml;glich, w&ouml;chentlich oder im Intervall, auf Wunsch still im Hintergrund. Gleichzeitig f&auml;llige Termine reihen sich ein statt verworfen zu werden, verpasste Termine werden am selben Tag nachgeholt. Autostart nur bei aktivem Zeitplan, Betrieb im Infobereich</li>
+        <li><strong>Kopieren in Bl&ouml;cken:</strong> STOPP wirkt sofort, auch mitten in einer sehr gro&szlig;en Datei; Abgebrochenes wird entfernt statt als Bruchst&uuml;ck liegenzubleiben. Anzeige von Geschwindigkeit und Restzeit</li>
+        <li><strong>Ausschl&uuml;sse und Platzpr&uuml;fung:</strong> Ausschlussliste je Profil mit 14 Vorgaben plus eigenen Mustern; vor jedem Lauf Vergleich von freiem Platz und Schreibmenge, bei Enge mit exaktem Fehlbetrag</li>
+        <li><strong>Restore &uuml;berarbeitet:</strong> jede Zeile zeigt den vollst&auml;ndigen Zielpfad, der live mit dem Ziel-Modus wechselt; Warnungen stehen direkt in der Zeile, ein Klick &ouml;ffnet den Ordner im Explorer. Neu &bdquo;📌 Meine Ziele&ldquo; f&uuml;r eigene Zielordner mit Anzeige, ob sie gerade erreichbar sind</li>
+        <li><strong>Cleanup &uuml;berarbeitet:</strong> archivierte Altdateien werden im Programm angezeigt, neueste zuerst, und lassen sich einzeln zur&uuml;ckholen. Simulation und echter Lauf sind eine ausdr&uuml;ckliche Auswahl; die Analyse l&auml;uft im Hintergrund mit Fortschrittsanzeige</li>
+        <li><strong>Sieben</strong> statt f&uuml;nf Zusatzverzeichnisse; Fenstergr&ouml;&szlig;e und -position merkbar; zus&auml;tzliche Skalierungsstufe 90&nbsp;%; eigenes Programmsymbol</li>
+        <li>Behoben: STOPP war im Backup wirkungslos; Absturz im Restore-Modus &bdquo;Gleicher PC&ldquo;; Zusatzverzeichnisse konnten in den Backup-Ordner selbst zur&uuml;ckgeschrieben werden; vermerkte Originalpfade der Zusatzverzeichnisse gingen bei sp&auml;teren L&auml;ufen verloren; Einfrieren im Cleanup bei Analyse und Archivliste; abgeschnittene &Uuml;berschriften ab 125&nbsp;% Skalierung</li>
+      </ul>
+    </div>
     <div class="changelog-entry">
       <div class="changelog-version">v2.2.0 <span>Wechsel auf Python</span></div>
       <ul>
