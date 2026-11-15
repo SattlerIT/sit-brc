@@ -187,7 +187,7 @@
       <span class="logo-name">&nbsp;BRC</span>
     </div>
     <span class="header-sub">Backup &middot; Restore &middot; Cleanup</span>
-    <span class="header-badge">Freeware &middot; Setup &amp; Portable &middot; Windows</span>
+    <span class="header-badge">Freeware &middot; v4.0 &middot; Setup &amp; Portabel &middot; Windows</span>
   </div>
 </header>
 <div class="divider"></div>
@@ -196,14 +196,14 @@
 <div class="hero">
   <div class="hero-inner">
     <div>
-      <h1>Benutzerdaten sichern, wiederherstellen und aufr&auml;umen<br>&ndash; alles in einem Werkzeug</h1>
-      <p>S-IT-BRC sichert deine Benutzerdaten (Desktop, Dokumente, Bilder, Musik, Videos, Downloads, AppData) auf ein externes Laufwerk &ndash; inkrementell oder als vollst&auml;ndiges Archiv, mit OneDrive-Erkennung und bis zu sieben frei w&auml;hlbaren Zusatzverzeichnissen. Neu in Version 3.0: <strong>Backup-Profile</strong> b&uuml;ndeln alle Einstellungen einer Sicherung, und die <strong>automatische Zeitsteuerung</strong> f&uuml;hrt sie nach Zeitplan im Hintergrund aus. Restore stellt die Daten gezielt wieder her &ndash; mit sichtbaren Zielpfaden &ndash;, Cleanup h&auml;lt inkrementelle Backups schlank, und alles wird nachvollziehbar protokolliert.</p>
-      <a href="https://github.com/SattlerIT/sit-brc/releases/download/v3.0.0/sit-brc_v3.0.0.zip" class="btn-download">⬇ Download v3.0.0</a>
+      <h1>Benutzerdaten sichern, zurückholen und aufräumen<br>&ndash; alles in einem Werkzeug</h1>
+      <p>S-IT-BRC sichert Ihre Benutzerdaten (Desktop, Dokumente, Bilder, Musik, Videos, Downloads, AppData), OneDrive und bis zu sieben Zusatzverzeichnisse auf ein anderes Laufwerk. Neu in Version 4.0: Neben die Dateisicherung tritt das <strong>Backup in eine einzige Datei</strong> &ndash; auf Wunsch <strong>verschlüsselt</strong> und mit <strong>mehreren Versionen</strong>. Dazu kommen eine neue Oberfläche, acht Sprachen und eine Hilfe mit Bildern. Restore holt einzelne Ordner oder Dateien gezielt zurück, Cleanup hält die Sicherungen schlank, und der Zeitplan erledigt das Sichern automatisch.</p>
+      <a href="https://github.com/SattlerIT/sit-brc/releases/latest/download/sit-brc-V-4_latest.zip" class="btn-download">⬇ Download v4.0</a>
       <a href="https://github.com/SattlerIT/sit-brc/releases" class="btn-secondary" style="margin-left:12px;">Alle Versionen</a>
-      <span class="btn-hint">Version 3.0.0 &middot; Das Paket enth&auml;lt Installer und Deinstaller f&uuml;r die saubere Windows-Integration &ndash; ein Portabel-Modus f&uuml;r USB-Sticks ist ebenfalls dabei.</span>
+      <span class="btn-hint">Version 4.0 &middot; Der Download enthält das Setup und das Programmarchiv. Bitte die Zip vollständig entpacken und <strong>S-IT-BRC-Setup.exe</strong> starten &ndash; das Setup installiert oder entpackt das Programm portabel, zum Beispiel auf einen USB-Stick.</span>
     </div>
     <div class="hero-screenshot">
-      <img src="screenshot-backup.png" alt="S-IT-BRC – Backup-Modul">
+      <img src="Screenshots/screenshot-overview-de.png" alt="S-IT-BRC – Übersicht">
     </div>
   </div>
 </div>
@@ -214,69 +214,79 @@
   <div class="section-title">⚙ Funktionen</div>
   <div class="cards">
     <div class="card">
-      <div class="card-icon">📋</div>
-      <h3>Backup-Profile <span class="badge-new">NEU</span></h3>
-      <p>Alle Einstellungen einer Sicherung &ndash; Ziellaufwerk, Modus, Ordnerauswahl, OneDrive, Zusatzverzeichnisse und Ausschl&uuml;sse &ndash; liegen in einem benannten Profil. Einmal einrichten, danach mit einem Klick w&auml;hlen.</p>
+      <div class="card-icon">🗂️</div>
+      <h3>Zwei Arten von Sicherung <span class="badge-new">NEU</span></h3>
+      <p>Je Profil wählen Sie die Art: Die Dateisicherung kopiert Ihre Dateien einzeln in Ordner am Ziel. Das Backup (.brc) legt alles in einer einzigen Datei ab &ndash; innen ein ZIP-Archiv nach Standard.</p>
     </div>
     <div class="card">
-      <div class="card-icon">⏰</div>
-      <h3>Automatische Zeitsteuerung <span class="badge-new">NEU</span></h3>
-      <p>Sichert t&auml;glich, w&ouml;chentlich oder im Intervall &ndash; auf Wunsch still im Hintergrund. Verpasste Termine werden nachgeholt, gleichzeitig f&auml;llige reihen sich ein. Autostart und Betrieb im Infobereich inklusive.</p>
+      <div class="card-icon">🔐</div>
+      <h3>Verschlüsselung <span class="badge-new">NEU</span></h3>
+      <p>Ein Backup (.brc) lässt sich mit einem Kennwort verschlüsseln (AES-256). Auch die Namen der Dateien und Ordner sind dann von außen nicht lesbar. Eine Hintertür gibt es nicht.</p>
     </div>
     <div class="card">
-      <div class="card-icon">🧱</div>
-      <h3>Kopieren in Bl&ouml;cken <span class="badge-new">NEU</span></h3>
-      <p>Kopiert wird blockweise statt Datei am St&uuml;ck: STOPP wirkt sofort, auch mitten in einer sehr gro&szlig;en Datei. Abgebrochenes wird entfernt statt als Bruchst&uuml;ck liegenzubleiben, mit Anzeige von Geschwindigkeit und Restzeit.</p>
+      <div class="card-icon">🔁</div>
+      <h3>Versionen <span class="badge-new">NEU</span></h3>
+      <p>Sie legen je Profil fest, wie viele Sicherungen erhalten bleiben. Eine ältere wird erst entfernt, wenn die neue vollständig geschrieben ist. Einzelne Sicherungen lassen sich zum Aufbewahren markieren.</p>
     </div>
     <div class="card">
-      <div class="card-icon">🚫</div>
-      <h3>Ausschl&uuml;sse &amp; Platzpr&uuml;fung <span class="badge-new">NEU</span></h3>
-      <p>Ausschlussliste je Profil mit 14 Vorgaben f&uuml;r Temp-Ordner, Caches und &Auml;hnliches, erweiterbar um eigene Muster. Vor jedem Lauf wird der freie Platz gepr&uuml;ft &ndash; bei Enge mit exaktem Fehlbetrag.</p>
-    </div>
-    <div class="card">
-      <div class="card-icon">💾</div>
-      <h3>Backup</h3>
-      <p>Sichert Benutzerdaten inkrementell oder als vollst&auml;ndiges Archiv auf ein externes Laufwerk. Mit OneDrive-Erkennung und bis zu 7 Zusatzverzeichnissen.</p>
+      <div class="card-icon">✅</div>
+      <h3>Sicherungen prüfen <span class="badge-new">NEU</span></h3>
+      <p>Das Fenster &bdquo;Verwalten&ldquo; zeigt die Sicherungen eines Profils. &bdquo;Prüfen&ldquo; liest eine Sicherung vollständig und vergleicht jede Datei mit ihrer Prüfsumme.</p>
     </div>
     <div class="card">
       <div class="card-icon">🔄</div>
-      <h3>Restore mit sichtbaren Zielpfaden <span class="badge-new">NEU</span></h3>
-      <p>Jede Zeile zeigt den vollst&auml;ndigen Zielpfad, der live mitwechselt; Warnungen stehen direkt in der Zeile, ein Klick &ouml;ffnet den Ordner im Explorer. Eigene H&auml;ufig-Ziele lassen sich hinterlegen. Was angezeigt wird, ist genau das, was passiert.</p>
+      <h3>Restore einzelner Dateien <span class="badge-new">NEU</span></h3>
+      <p>Aus einem Backup (.brc) holen Sie einzelne Ordner oder Dateien zurück, ohne die ganze Sicherung zu entpacken &ndash; an den ursprünglichen Ort, auf ein anderes System oder in ein frei wählbares Zielverzeichnis.</p>
     </div>
     <div class="card">
-      <div class="card-icon">🧹</div>
-      <h3>Cleanup mit Archiv-R&uuml;ckholung <span class="badge-new">NEU</span></h3>
-      <p>Bereinigt inkrementelle Backups von veralteten Dateien &ndash; verschoben in einen Archivordner, nicht gel&ouml;scht. Das Archiv wird im Programm angezeigt, einzelne Altdateien lassen sich gezielt zur&uuml;ckholen. Simulation und echter Lauf sind eine ausdr&uuml;ckliche Auswahl.</p>
-    </div>
-    <div class="card">
-      <div class="card-icon">📁</div>
-      <h3>Zusatzverzeichnisse</h3>
-      <p>Bis zu 7 beliebige Ordner lassen sich zus&auml;tzlich sichern, wiederherstellen und bereinigen. Die Auswahl bleibt dauerhaft im Profil gespeichert.</p>
+      <div class="card-icon">📒</div>
+      <h3>Sicherungsverzeichnis <span class="badge-new">NEU</span></h3>
+      <p>BRC führt ein Verzeichnis darüber, wann mit welchem Profil wohin gesichert wurde. Die Suche darin findet Dateien nach ihrem Namen in allen Sicherungen, die gerade erreichbar sind.</p>
     </div>
     <div class="card">
       <div class="card-icon">☁️</div>
-      <h3>OneDrive-Erkennung</h3>
-      <p>Auf OneDrive umgeleitete Ordner werden automatisch aus der Registry erkannt, orange hervorgehoben und korrekt gesichert.</p>
+      <h3>OneDrive <span class="badge-new">NEU</span></h3>
+      <p>Ordner, die Windows auf OneDrive umgeleitet hat, sind gekennzeichnet. Dateien, die nur online in der Cloud liegen, lädt BRC für die Sicherung herunter und gibt den Platz danach wieder frei.</p>
     </div>
     <div class="card">
-      <div class="card-icon">🛡</div>
-      <h3>Fremdger&auml;t-Erkennung</h3>
-      <p>Backups von anderen PCs werden erkannt: Restore sperrt den &bdquo;Gleicher PC&ldquo;-Modus, Cleanup verhindert die versehentliche Bereinigung fremder Backups.</p>
+      <div class="card-icon">⏰</div>
+      <h3>Zeitsteuerung</h3>
+      <p>Sichert täglich, wöchentlich, monatlich oder im Intervall &ndash; auf Wunsch still im Hintergrund, für beide Arten von Sicherung. Verpasste Termine werden nachgeholt, gleichzeitig fällige reihen sich ein.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">📊</div>
+      <h3>Fortschritt im Blick <span class="badge-new">NEU</span></h3>
+      <p>Bei großen Dateien zeigt ein zweiter Balken den Stand der laufenden Datei. Dazu stehen Gesamtmenge, Tempo und Restzeit da &ndash; auch im Fenster einer zeitgesteuerten Sicherung.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">🎨</div>
+      <h3>Neue Oberfläche <span class="badge-new">NEU</span></h3>
+      <p>Eine Seitenleiste führt zu Übersicht, Backup, Restore und Cleanup. Fünf Farbschemata von hell bis dunkel und eine Anzeigegröße von 90 bis 200&nbsp;% stehen zur Wahl.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">🌍</div>
+      <h3>Acht Sprachen <span class="badge-new">NEU</span></h3>
+      <p>Programm und Hilfe in Deutsch, English, Français, Español, Nederlands, Italiano, Polski und Hrvatski. Die Bilder der Hilfe zeigen das Programm in der jeweiligen Sprache.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">📖</div>
+      <h3>Hilfe und Handbuch <span class="badge-new">NEU</span></h3>
+      <p>Die Hilfe beginnt mit dem Ablauf in sieben Schritten; die Seite &bdquo;S-IT-BRC &ndash; ganz einfach&ldquo; beschreibt das Sichern auf einen USB-Stick. Als PDF liegt ein Handbuch auf Deutsch und Englisch bei.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">🗄️</div>
+      <h3>Cleanup</h3>
+      <p>Hält die Dateisicherung schlank: Veraltete Dateien werden in einen Archivordner verschoben, mit Simulation vor dem echten Lauf. Für Backups (.brc) zeigt Cleanup die Sicherungen und entfernt die, die Sie nicht mehr brauchen.</p>
     </div>
     <div class="card">
       <div class="card-icon">📋</div>
-      <h3>Log &amp; Protokoll</h3>
-      <p>Jeder Vorgang wird protokolliert &ndash; pro Ordner mit Quelle, Ziel, Neu/&Uuml;bersprungen und Gesamtz&auml;hler. Das Log ist direkt aus dem Programm abrufbar.</p>
+      <h3>Profile, Zusatzverzeichnisse, Ausschlüsse</h3>
+      <p>Alle Einstellungen einer Sicherung liegen in einem benannten Profil &ndash; mit bis zu sieben Zusatzverzeichnissen und einer eigenen Ausschlussliste für Temp-Ordner, Zwischenspeicher und Ähnliches.</p>
     </div>
     <div class="card">
-      <div class="card-icon">🔍</div>
-      <h3>Automatische Backup-Suche</h3>
-      <p>Restore und Cleanup durchsuchen alle Laufwerke im Hintergrund automatisch nach vorhandenen Backups &ndash; ohne dass die Oberfl&auml;che einfriert.</p>
-    </div>
-    <div class="card">
-      <div class="card-icon">🖥</div>
-      <h3>DPI-Skalierung &amp; HiDPI</h3>
-      <p>90&ndash;200&nbsp;% Skalierung &uuml;ber den ⚙ Ansicht-Button, mit automatischer Anpassung an die Bildschirmaufl&ouml;sung. Fenstergr&ouml;&szlig;e und -position lassen sich merken.</p>
+      <div class="card-icon">📝</div>
+      <h3>Protokoll</h3>
+      <p>Jeder Vorgang wird protokolliert und ist direkt aus dem Programm abrufbar. Vor jedem Lauf nennt eine Rückfrage in ganzen Sätzen, was geschehen wird.</p>
     </div>
   </div>
 
@@ -284,32 +294,32 @@
   <div class="section-title">📸 Screenshots</div>
   <div class="gallery">
     <div class="gallery-item" onclick="openLightbox(this)">
-      <img src="screenshot-brc.png" alt="S-IT-BRC Startoberfl&auml;che">
-      <div class="gallery-caption">Startoberfl&auml;che &ndash; Backup, Restore und Cleanup in einem Fenster</div>
+      <img src="Screenshots/screenshot-overview-de.png" alt="S-IT-BRC Übersicht">
+      <div class="gallery-caption">Übersicht &ndash; letzte Sicherung, nächster Termin und freier Platz am Ziel</div>
     </div>
     <div class="gallery-item" onclick="openLightbox(this)">
-      <img src="screenshot-backup.png" alt="S-IT-BRC Backup-Modul">
-      <div class="gallery-caption">Backup &ndash; Profile, Benutzerdaten und Zusatzverzeichnisse sichern</div>
+      <img src="Screenshots/screenshot-backup-de.png" alt="S-IT-BRC Backup-Seite">
+      <div class="gallery-caption">Backup &ndash; Profil, Art der Sicherung, Ordner und Ziel</div>
     </div>
     <div class="gallery-item" onclick="openLightbox(this)">
-      <img src="screenshot-restore.png" alt="S-IT-BRC Restore-Modul">
-      <div class="gallery-caption">Restore &ndash; gezielt wiederherstellen, mit sichtbaren Zielpfaden</div>
+      <img src="Screenshots/screenshot-restore-de.png" alt="S-IT-BRC Restore-Seite">
+      <div class="gallery-caption">Restore &ndash; einzelne Ordner und Dateien aus einem Backup zurückholen</div>
     </div>
     <div class="gallery-item" onclick="openLightbox(this)">
-      <img src="screenshot-cleanup.png" alt="S-IT-BRC Cleanup-Modul">
-      <div class="gallery-caption">Cleanup &ndash; inkrementelle Backups schlank halten, mit Archiv und R&uuml;ckholung</div>
+      <img src="Screenshots/screenshot-cleanup-de.png" alt="S-IT-BRC Cleanup-Seite">
+      <div class="gallery-caption">Cleanup &ndash; vorhandene Sicherungen ansehen und nicht mehr benötigte entfernen</div>
     </div>
   </div>
 
   <!-- DOWNLOAD -->
   <div class="section-title">⬇ Download &amp; Dokumentation</div>
-  <p style="font-size:14px; margin-bottom:16px;">Die aktuelle Version, die Hilfe-Dateien und der Changelog finden sich im <a href="https://github.com/SattlerIT/sit-brc/releases" style="color:var(--blue)">Release-Bereich auf GitHub</a>.</p>
+  <p style="font-size:14px; margin-bottom:16px;">Die aktuelle Version und der Changelog finden sich im <a href="https://github.com/SattlerIT/sit-brc/releases" style="color:var(--blue)">Release-Bereich auf GitHub</a>. Hilfe und Handbuch sind im Programm enthalten.</p>
 
   <div class="ok-box">
-    <strong>Setup inklusive:</strong> Das Paket enth&auml;lt einen Installer und Deinstaller f&uuml;r die saubere Windows-Integration &ndash; inklusive Eintrag in der Systemsteuerung unter &bdquo;Programme und Features&ldquo;. Ein Portabel-Modus f&uuml;r USB-Sticks ist ebenfalls verf&uuml;gbar.
+    <strong>Ein Setup für beide Wege:</strong> Der Download <strong>sit-brc-V-4_latest.zip</strong> enthält das Setup und das Programmarchiv. &bdquo;Installieren&ldquo; richtet S-IT-BRC mit Verknüpfungen und einem Eintrag in der Systemsteuerung ein. &bdquo;Portabel&ldquo; fragt nach einem Ordner und entpackt das Programm dorthin, zum Beispiel auf einen USB-Stick. Bei der Deinstallation werden Profile, Zeitpläne und Einstellungen auf Wunsch gesichert; eine spätere Neuinstallation bietet an, sie zurückzuholen.
   </div>
   <div class="info-box">
-    <strong>Update von Version 2.x:</strong> Das Setup erkennt vorhandene Installationen automatisch. Backup-Profile, eigene Restore-Ziele, Zeitpl&auml;ne und Einstellungen bleiben erhalten. L&auml;uft das Programm noch im Infobereich, weist das Setup darauf hin und bietet an, es zu beenden.
+    <strong>Update von Version 3:</strong> Das Setup erkennt eine installierte Version 3. Profile, eigene Restore-Ziele, Zeitpläne und Einstellungen werden übernommen und vorher zusätzlich gesichert. Läuft das Programm noch im Infobereich, bietet das Setup an, es zu beenden. Die Dateisicherung arbeitet wie bisher.
   </div>
 
   <!-- SYSTEMANFORDERUNGEN -->
@@ -317,8 +327,8 @@
   <table>
     <tr><th>Komponente</th><th>Anforderung</th></tr>
     <tr><td>Betriebssystem</td><td>Windows 10 / Windows 11 (64-Bit)</td></tr>
-    <tr><td>Rechte</td><td>Administratorrechte werden beim Programmstart automatisch angefordert</td></tr>
-    <tr><td>Lieferumfang</td><td>Setup, Deinstaller und Hilfe-Dateien f&uuml;r alle drei Module</td></tr>
+    <tr><td>Rechte</td><td>Das Setup fordert Administratorrechte an</td></tr>
+    <tr><td>Lieferumfang</td><td>Setup, Deinstaller, Hilfe in acht Sprachen, Handbuch als PDF (Deutsch und Englisch)</td></tr>
   </table>
 
   <!-- SICHERHEITSHINWEIS -->
@@ -334,30 +344,22 @@
   <div class="section-title">📋 Changelog</div>
   <div class="changelog">
     <div class="changelog-entry">
-      <div class="changelog-version">v3.0.0 <span>Profile, Zeitsteuerung &amp; &uuml;berarbeiteter Restore</span></div>
+      <div class="changelog-version">v4.0 <span>Backup in eine Datei, Verschlüsselung, Versionen, neue Oberfläche, acht Sprachen</span></div>
       <ul>
-        <li><strong>Backup-Profile:</strong> alle Einstellungen einer Sicherung in einem benannten Profil &ndash; Ziellaufwerk, Modus, Ordnerauswahl, OneDrive, Zusatzverzeichnisse und Ausschl&uuml;sse. Beim ersten Start entsteht automatisch ein Profil &bdquo;Standard&ldquo; aus den vorhandenen Einstellungen</li>
-        <li><strong>Automatische Zeitsteuerung:</strong> t&auml;glich, w&ouml;chentlich oder im Intervall, auf Wunsch still im Hintergrund. Gleichzeitig f&auml;llige Termine reihen sich ein statt verworfen zu werden, verpasste Termine werden am selben Tag nachgeholt. Autostart nur bei aktivem Zeitplan, Betrieb im Infobereich</li>
-        <li><strong>Kopieren in Bl&ouml;cken:</strong> STOPP wirkt sofort, auch mitten in einer sehr gro&szlig;en Datei; Abgebrochenes wird entfernt statt als Bruchst&uuml;ck liegenzubleiben. Anzeige von Geschwindigkeit und Restzeit</li>
-        <li><strong>Ausschl&uuml;sse und Platzpr&uuml;fung:</strong> Ausschlussliste je Profil mit 14 Vorgaben plus eigenen Mustern; vor jedem Lauf Vergleich von freiem Platz und Schreibmenge, bei Enge mit exaktem Fehlbetrag</li>
-        <li><strong>Restore &uuml;berarbeitet:</strong> jede Zeile zeigt den vollst&auml;ndigen Zielpfad, der live mit dem Ziel-Modus wechselt; Warnungen stehen direkt in der Zeile, ein Klick &ouml;ffnet den Ordner im Explorer. Neu &bdquo;📌 Meine Ziele&ldquo; f&uuml;r eigene Zielordner mit Anzeige, ob sie gerade erreichbar sind</li>
-        <li><strong>Cleanup &uuml;berarbeitet:</strong> archivierte Altdateien werden im Programm angezeigt, neueste zuerst, und lassen sich einzeln zur&uuml;ckholen. Simulation und echter Lauf sind eine ausdr&uuml;ckliche Auswahl; die Analyse l&auml;uft im Hintergrund mit Fortschrittsanzeige</li>
-        <li><strong>Sieben</strong> statt f&uuml;nf Zusatzverzeichnisse; Fenstergr&ouml;&szlig;e und -position merkbar; zus&auml;tzliche Skalierungsstufe 90&nbsp;%; eigenes Programmsymbol</li>
-        <li>Behoben: STOPP war im Backup wirkungslos; Absturz im Restore-Modus &bdquo;Gleicher PC&ldquo;; Zusatzverzeichnisse konnten in den Backup-Ordner selbst zur&uuml;ckgeschrieben werden; vermerkte Originalpfade der Zusatzverzeichnisse gingen bei sp&auml;teren L&auml;ufen verloren; Einfrieren im Cleanup bei Analyse und Archivliste; abgeschnittene &Uuml;berschriften ab 125&nbsp;% Skalierung</li>
+        <li><strong>Backup in eine Datei (.brc):</strong> zweite Art von Sicherung neben der Dateisicherung, je Profil wählbar; innen ein ZIP-Archiv nach Standard</li>
+        <li><strong>Verschlüsselung:</strong> Kennwort mit AES-256; auch die Namen der Dateien und Ordner sind von außen nicht lesbar</li>
+        <li><strong>Versionen:</strong> je Profil festlegen, wie viele Sicherungen erhalten bleiben; einzelne zum Aufbewahren markieren</li>
+        <li><strong>Verwalten und Prüfen:</strong> Sicherungen vollständig lesen und jede Datei mit ihrer Prüfsumme vergleichen</li>
+        <li><strong>Restore:</strong> einzelne Ordner oder Dateien aus einem Backup (.brc) zurückholen, ohne die ganze Sicherung zu entpacken</li>
+        <li><strong>Sicherungsverzeichnis:</strong> Übersicht aller Sicherungen mit Suche nach Dateinamen</li>
+        <li><strong>OneDrive:</strong> Dateien, die nur online in der Cloud liegen, werden für die Sicherung heruntergeladen und danach wieder freigegeben</li>
+        <li><strong>Zeitsteuerung:</strong> für beide Arten von Sicherung, neu mit &bdquo;Monatlich&ldquo;; zweiter Balken für den Stand großer Dateien</li>
+        <li><strong>Neue Oberfläche:</strong> Seitenleiste, Übersicht, fünf Farbschemata, Anzeigegröße 90 bis 200&nbsp;%</li>
+        <li><strong>Acht Sprachen:</strong> Programm und Hilfe mit Bildern in der jeweiligen Sprache; Handbuch als PDF auf Deutsch und Englisch</li>
+        <li><strong>Installation:</strong> ein Setup für Installation und portable Nutzung; Übernahme der Einstellungen aus Version 3</li>
       </ul>
     </div>
-    <div class="changelog-entry">
-      <div class="changelog-version">v2.2.0 <span>Wechsel auf Python</span></div>
-      <ul>
-        <li>Komplett neu in Python entwickelt: alle drei Module (Backup, Restore, Cleanup) in einer einzigen EXE &ndash; schnellerer Start, einheitliches Design, bessere Wartbarkeit</li>
-        <li>DPI-Skalierung &amp; HiDPI-Unterst&uuml;tzung: 100&ndash;200&nbsp;% &uuml;ber den ⚙ Ansicht-Button, automatische Anpassung an die Bildschirmaufl&ouml;sung</li>
-        <li>OneDrive-Erkennung aus der Registry: umgeleitete Ordner werden orange hervorgehoben und korrekt gesichert</li>
-        <li>Zusatzverzeichnisse: bis zu 5 beliebige Ordner sichern, wiederherstellen und bereinigen, persistent in der INI gespeichert</li>
-        <li>Fremdger&auml;t-Erkennung bei Restore &amp; Cleanup: Restore sperrt den &bdquo;Gleicher PC&ldquo;-Modus, Cleanup verhindert das Bereinigen fremder Backups</li>
-        <li>Aussagekr&auml;ftigere Logs: pro Ordner Quelle, Neu/&Uuml;bersprungen, Zusatzverzeichnisse und Gesamtz&auml;hler; Ordnername als Pr&auml;fix in der Statuszeile</li>
-        <li>Automatische Backup-Suche (Auto-Button): Restore und Cleanup durchsuchen alle Laufwerke im Hintergrund ohne GUI-Einfrieren</li>
-      </ul>
-    </div>
+    <p style="font-size:12px; color:var(--muted); margin-top:16px;">Alle Einzelheiten und die früheren Versionen stehen im <a href="https://github.com/SattlerIT/sit-brc/blob/main/CHANGELOG.md" style="color:var(--blue)">vollständigen Changelog</a> (Englisch und Deutsch).</p>
   </div>
 
   <!-- ERWÄHNUNGEN -->
@@ -406,8 +408,8 @@
 
   <!-- DONATION -->
   <div class="info-box" style="text-align:center">
-    <strong>☕ S-IT-Tools gefallen dir?</strong><br>
-    Die S-IT-BRC-Tools werden kostenlos entwickelt und gepflegt. &Uuml;ber eine kleine Unterst&uuml;tzung freue ich mich:<br><br>
+    <strong>☕ S-IT-BRC gefällt Ihnen?</strong><br>
+    Die S-IT-Tools werden kostenlos entwickelt und gepflegt. &Uuml;ber eine kleine Unterst&uuml;tzung freue ich mich:<br><br>
     <a href="https://www.paypal.com/donate/?business=tool-entwicklung%40sattler-it.de&currency_code=EUR"
        style="background:#2980B9;color:#fff;padding:8px 20px;border-radius:4px;text-decoration:none;font-size:13px;font-weight:600">
       PayPal &ndash; tool-entwicklung@sattler-it.de
@@ -419,10 +421,9 @@
 <!-- FOOTER -->
 <footer>
   © 2026 Sattler IT-Service, Greifenstein &nbsp;•&nbsp; Autor: Hans Udo Sattler &nbsp;•&nbsp;
-  <a href="https://github.com/SattlerIT/sit-brc/blob/main/Lizenz.txt">Lizenz</a> &nbsp;•&nbsp;
   <a href="https://sattlerit.github.io/sattlerit-tools/">Tool-Übersicht</a> &nbsp;•&nbsp;
   <a href="https://sattlerit.github.io/sattlerit-tools/neuigkeiten.html">Neuigkeiten</a> &nbsp;•&nbsp;
-  <a href="Disclaimer.txt">Haftungsausschluss</a> &nbsp;•&nbsp;
+  <a href="Lizenz-Disclaimer.txt">Lizenz &amp; Haftungsausschluss</a> &nbsp;•&nbsp;
   <a href="https://sattlerit.github.io/sattlerit-tools/impressum.html">Impressum</a> &nbsp;•&nbsp;
   <a href="https://sattlerit.github.io/sattlerit-tools/datenschutz.html">Datenschutz</a>
 </footer>

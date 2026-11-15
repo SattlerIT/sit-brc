@@ -69,8 +69,10 @@ Der Download `sit-brc-V-4_latest.zip` enthält das Setup und das Programmarchiv.
 ## Lizenz
 
 © 2026 Sattler IT-Service, Greifenstein · Hans Udo Sattler  
-Dieses Programm ist Freeware für die nicht kommerzielle Verwendung.  
-Eine Weitergabe in veränderter Form oder eine Veränderung ist ohne ausdrückliche Genehmigung nicht gestattet.
+Freeware – kostenlose Nutzung und Weitergabe erlaubt.  
+Kommerzielle Weiterverwendung oder Modifikation ohne Genehmigung nicht gestattet.
+
+Vollständiger Text in acht Sprachen: [Lizenz-Disclaimer.txt](Lizenz-Disclaimer.txt)
 
 ## Kontakt
 
