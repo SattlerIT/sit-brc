@@ -58,7 +58,7 @@ The download `sit-brc-V-4_latest.zip` contains the setup and the program archive
 
 ## More information
 
-- [Project page](https://sattlerit.github.io/sit-brc/)
+- [Project page](https://sattlerit.github.io/sit-brc/index_en.html)
 - [Changelog](CHANGELOG.md)
 - [All S-IT tools](https://sattlerit.github.io/sattlerit-tools/)
 
