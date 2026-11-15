@@ -121,6 +121,8 @@
     .warn-box { background: #FEF9E7; border-left: 4px solid var(--yellow); border-radius: 0 4px 4px 0; padding: 14px 18px; font-size: 13px; line-height: 1.6; margin-bottom: 32px; color: #7D6608; }
     .ok-box   { background: #EAFAF1; border-left: 4px solid var(--green);  border-radius: 0 4px 4px 0; padding: 14px 18px; font-size: 13px; line-height: 1.6; margin-bottom: 32px; color: #1E7E45; }
 
+    .hash { font-family: Consolas, 'Courier New', monospace; font-size: 12.5px; word-break: break-all; background: rgba(255,255,255,.6); padding: 2px 6px; border-radius: 3px; }
+
     /* ── AUSBLICK-BOX ── */
     .outlook-box {
       background: linear-gradient(180deg, #F4ECF7 0%, #FBF6FD 100%);
@@ -351,10 +353,13 @@
   <!-- SICHERHEITSHINWEIS -->
   <div class="section-title">🛡 Note on virus scanners &amp; SmartScreen</div>
   <div class="info-box">
-    As this is an independently developed Windows tool, Windows SmartScreen or an installed internet security program may at first classify the file as unknown. In that case please add the program as <strong>trusted</strong> or as an <strong>exception</strong> in your security software.
+    S-IT-BRC is an independently developed Windows program without a purchased signature. Windows SmartScreen or a virus scanner may therefore classify the file as unknown at the first start. The message only says that Windows does not know the file yet.
   </div>
-  <div class="warn-box">
-    All files provided come directly from <strong>Sattler IT-Service</strong> and are published exclusively via the official GitHub page. <strong>Tip:</strong> After the first approval the tool generally runs permanently without further warnings.
+  <div class="ok-box">
+    <strong>How to recognise the genuine file:</strong> Download S-IT-BRC only from this page or from the <a href="https://github.com/SattlerIT/sit-brc/releases" style="color:inherit">release area on GitHub</a>. The file <strong>sit-brc-V-4_latest.zip</strong> has the checksum (SHA-256):<br>
+    <span class="hash">eb4a49c7f3f4bad940f7a5a23c1e45161eddcad525e802a285645cecfd61944b</span><br>
+    You check this in PowerShell, in the folder that contains the file: <span class="hash">certutil -hashfile sit-brc-V-4_latest.zip SHA256</span><br>
+    If the character string matches, the file is unchanged.
   </div>
 
   <!-- CHANGELOG -->

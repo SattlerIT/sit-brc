@@ -121,6 +121,8 @@
     .warn-box { background: #FEF9E7; border-left: 4px solid var(--yellow); border-radius: 0 4px 4px 0; padding: 14px 18px; font-size: 13px; line-height: 1.6; margin-bottom: 32px; color: #7D6608; }
     .ok-box   { background: #EAFAF1; border-left: 4px solid var(--green);  border-radius: 0 4px 4px 0; padding: 14px 18px; font-size: 13px; line-height: 1.6; margin-bottom: 32px; color: #1E7E45; }
 
+    .hash { font-family: Consolas, 'Courier New', monospace; font-size: 12.5px; word-break: break-all; background: rgba(255,255,255,.6); padding: 2px 6px; border-radius: 3px; }
+
     /* ── AUSBLICK-BOX ── */
     .outlook-box {
       background: linear-gradient(180deg, #F4ECF7 0%, #FBF6FD 100%);
@@ -351,10 +353,13 @@
   <!-- SICHERHEITSHINWEIS -->
   <div class="section-title">🛡 Hinweis zu Virenscannern &amp; SmartScreen</div>
   <div class="info-box">
-    Da es sich um ein unabh&auml;ngig entwickeltes Windows-Tool handelt, kann es vorkommen, dass Windows SmartScreen oder installierte Internet-Security-Programme die Datei zun&auml;chst als unbekannt einstufen. In diesem Fall f&uuml;gen Sie das Programm bitte als <strong>vertrauensw&uuml;rdig</strong> bzw. als <strong>Ausnahme</strong> in Ihrer Sicherheitssoftware hinzu.
+    S-IT-BRC ist ein unabhängig entwickeltes Windows-Programm ohne gekaufte Signatur. Windows SmartScreen oder ein Virenscanner stufen die Datei deshalb beim ersten Start mitunter als unbekannt ein. Die Meldung sagt nur, dass Windows die Datei noch nicht kennt.
   </div>
-  <div class="warn-box">
-    Alle bereitgestellten Dateien stammen direkt von <strong>Sattler IT-Service</strong> und werden ausschlie&szlig;lich &uuml;ber die offizielle GitHub-Seite ver&ouml;ffentlicht. <strong>Tipp:</strong> Nach der ersten Freigabe l&auml;uft das Tool in der Regel dauerhaft ohne weitere Warnmeldungen.
+  <div class="ok-box">
+    <strong>So erkennen Sie die echte Datei:</strong> Laden Sie S-IT-BRC ausschließlich von dieser Seite oder aus dem <a href="https://github.com/SattlerIT/sit-brc/releases" style="color:inherit">Release-Bereich auf GitHub</a>. Die Datei <strong>sit-brc-V-4_latest.zip</strong> hat die Prüfsumme (SHA-256):<br>
+    <span class="hash">eb4a49c7f3f4bad940f7a5a23c1e45161eddcad525e802a285645cecfd61944b</span><br>
+    Sie prüfen das in der PowerShell, in dem Ordner, in dem die Datei liegt: <span class="hash">certutil -hashfile sit-brc-V-4_latest.zip SHA256</span><br>
+    Stimmt die Zeichenfolge überein, ist die Datei unverändert.
   </div>
 
   <!-- CHANGELOG -->
