@@ -1,0 +1,640 @@
+======================================================================
+ S-IT-BRC – Backup · Restore · Cleanup
+ Lizenz und Haftungsausschluss · License and disclaimer
+ Licence et avertissement · Licencia y aviso legal
+ © 2026 Sattler IT-Service, Greifenstein · Hans Udo Sattler
+======================================================================
+
+ 1. DEUTSCH                     2. ENGLISH
+ 3. FRANÇAIS                    4. ESPAÑOL
+ 5. NEDERLANDS                  6. ITALIANO
+ 7. POLSKI                      8. HRVATSKI
+
+
+======================================================================
+ DEUTSCH
+======================================================================
+
+LIZENZ - S-IT-BRC
+© 2026 Sattler IT-Service, Greifenstein
+Autor: Hans Udo Sattler
+
+Freeware – kostenlose Nutzung und Weitergabe erlaubt.
+Kommerzielle Weiterverwendung oder Modifikation ohne Genehmigung nicht
+gestattet.
+Kontakt: tool-entwicklung@sattler-it.de
+
+
+HAFTUNGSAUSSCHLUSS (DISCLAIMER)
+
+Alle Angaben ohne Gewähr. Irrtümer vorbehalten.
+
+S-IT-BRC ist ein kostenloses Werkzeug zum Sichern (Backup),
+Wiederherstellen (Restore) und Aufräumen (Cleanup) von Benutzerdaten.
+Das Tool arbeitet nach bestem Wissen zuverlässig, eine fehlerfreie
+Funktion auf jedem System und in jeder Konstellation kann jedoch nicht
+zugesichert werden.
+
+1. Keine Zusicherung der Vollständigkeit
+   Backup- und Restore-Vorgänge sind keine Zusicherung dafür, dass
+   alle Dateien vollständig, unverändert und fehlerfrei gesichert bzw.
+   wiederhergestellt wurden. Netzwerkprobleme, nicht erreichbare
+   Laufwerke, gesperrte Dateien, Dateien, die nur online in einem
+   Cloud-Speicher liegen, unzureichender Speicherplatz oder
+   Systemfehler können einzelne Vorgänge beeinträchtigen oder
+   verhindern.
+
+2. Prüfen Sie Ihre Sicherungen
+   Ein erstelltes Backup ist erst dann verlässlich, wenn die
+   Wiederherstellung getestet wurde. Die Funktion „Prüfen“ bestätigt,
+   dass die Daten unverändert in der Sicherung liegen; einen
+   Rückholtest ersetzt sie nicht. Überzeugen Sie sich vor dem Löschen
+   oder Umschichten von Originaldaten selbst davon, dass die
+   gesicherten Daten vollständig und lesbar sind.
+
+3. Verschlüsselte Sicherungen
+   Eine verschlüsselte Sicherung lässt sich nur mit ihrem Kennwort
+   öffnen. Ohne dieses Kennwort sind die gesicherten Daten nicht mehr
+   zugänglich – auch nicht für den Autor des Programms. Einen anderen
+   Weg gibt es nicht. Die Merkhilfe wird unverschlüsselt in der
+   Sicherungsdatei gespeichert und ist für jeden lesbar, der die Datei
+   besitzt.
+
+4. Nutzung auf eigene Verantwortung
+   Die Verwendung des Tools erfolgt auf eigene Verantwortung. Das gilt
+   besonders für Restore-Vorgänge, die vorhandene Dateien
+   überschreiben, für den Cleanup, der veraltete Dateien in einen
+   Archivordner verschiebt, und für das Löschen von Sicherungen: Es
+   ist endgültig und geht nicht in den Papierkorb. Je nach Einstellung
+   „Behalten“ entfernt das Programm ältere Sicherungen eines Profils
+   selbsttätig. Für Ergebnisse und Entscheidungen, die auf Basis der
+   Vorgänge oder Protokolle getroffen werden, wird keine Verantwortung
+   übernommen.
+
+5. Sicherungen nach Zeitplan
+   Sicherungen nach Zeitplan laufen ohne Rückfrage und nur, solange
+   das Programm läuft. Ob ein geplanter Lauf stattgefunden hat und
+   vollständig war, zeigen die Protokolle. Sehen Sie diese regelmäßig
+   durch.
+
+6. Haftungsausschluss
+   Eine Haftung für Schäden, Datenverluste oder Vermögensschäden, die
+   aus der Nutzung des Tools oder seiner Ergebnisse entstehen, ist –
+   soweit gesetzlich zulässig – ausgeschlossen.
+
+7. Backups bleiben unerlässlich
+   Verlassen Sie sich bei wichtigen Daten nicht allein auf eine
+   einzige Sicherung. Bewahren Sie unabhängig davon regelmäßig
+   mehrere, voneinander getrennte Sicherungskopien Ihrer Daten an
+   unterschiedlichen Orten auf.
+
+----------------------------------------------------------------------
+Kontakt:       tool-entwicklung@sattler-it.de
+Projektseite:  https://sattlerit.github.io/sit-brc/
+----------------------------------------------------------------------
+
+
+======================================================================
+ ENGLISH
+======================================================================
+
+LICENSE - S-IT-BRC
+© 2026 Sattler IT-Service, Greifenstein
+Author: Hans Udo Sattler
+
+Freeware – free use and redistribution permitted.
+Commercial reuse or modification without permission is not allowed.
+Contact: tool-entwicklung@sattler-it.de
+
+
+DISCLAIMER
+
+All information is provided without guarantee. Errors excepted.
+
+S-IT-BRC is a free tool for backing up (Backup), restoring (Restore)
+and cleaning up (Cleanup) user data. The tool works reliably to the
+best of our knowledge; however, error-free operation on every system
+and in every configuration cannot be guaranteed.
+
+1. No assurance of completeness
+   Backup and restore runs are no assurance that all files have been
+   backed up or restored completely, unchanged and without error.
+   Network problems, unreachable drives, locked files, files that
+   exist only online in a cloud storage, insufficient disk space or
+   system errors can affect or prevent individual operations.
+
+2. Check your backups
+   A backup is only dependable once restoring from it has been tested.
+   The “Verify” function confirms that the data in the backup is
+   unchanged; it does not replace a test restore. Before deleting or
+   moving original data, make sure yourself that the backed-up data is
+   complete and readable.
+
+3. Encrypted backups
+   An encrypted backup can only be opened with its password. Without
+   this password the backed-up data can no longer be accessed – not
+   even by the author of the program. There is no other way. The
+   password hint is stored unencrypted in the backup file and can be
+   read by anyone who has the file.
+
+4. Use at your own risk
+   Using the tool is at your own risk. This applies in particular to
+   restore runs that overwrite existing files, to the cleanup, which
+   moves outdated files into an archive folder, and to deleting
+   backups: deletion is permanent and does not go to the Recycle Bin.
+   Depending on the “Keep” setting, the program removes older backups
+   of a profile by itself. No responsibility is accepted for results
+   and decisions made on the basis of the operations or the logs.
+
+5. Scheduled backups
+   Scheduled backups run without a confirmation prompt and only while
+   the program is running. The logs show whether a scheduled run took
+   place and was complete. Look through them regularly.
+
+6. Limitation of liability
+   Liability for damage, data loss or financial loss arising from the
+   use of the tool or its results is excluded to the extent permitted
+   by law.
+
+7. Backups remain essential
+   For important data, do not rely on one single backup alone.
+   Independently of this, regularly keep several separate backup
+   copies of your data in different places.
+
+----------------------------------------------------------------------
+Contact:       tool-entwicklung@sattler-it.de
+Project page:  https://sattlerit.github.io/sit-brc/
+----------------------------------------------------------------------
+
+
+======================================================================
+ FRANÇAIS
+======================================================================
+
+LICENCE - S-IT-BRC
+© 2026 Sattler IT-Service, Greifenstein
+Auteur : Hans Udo Sattler
+
+Freeware – utilisation et diffusion gratuites autorisées.
+Toute réutilisation commerciale ou modification sans autorisation est
+interdite.
+Contact : tool-entwicklung@sattler-it.de
+
+
+AVERTISSEMENT (DISCLAIMER)
+
+Toutes les informations sont fournies sans garantie. Sous réserve
+d'erreurs.
+
+S-IT-BRC est un outil gratuit pour sauvegarder (Backup), restaurer
+(Restore) et nettoyer (Cleanup) les données utilisateur. L'outil
+fonctionne de manière fiable en l'état actuel des connaissances ; un
+fonctionnement sans erreur sur chaque système et dans chaque
+configuration ne peut toutefois pas être garanti.
+
+1. Aucune garantie d'exhaustivité
+   Les sauvegardes et les restaurations ne garantissent pas que tous
+   les fichiers ont été sauvegardés ou restaurés intégralement, sans
+   modification et sans erreur. Des problèmes de réseau, des lecteurs
+   inaccessibles, des fichiers verrouillés, des fichiers présents
+   uniquement en ligne dans un stockage cloud, un espace disque
+   insuffisant ou des erreurs système peuvent perturber ou empêcher
+   certaines opérations.
+
+2. Vérifiez vos sauvegardes
+   Une sauvegarde n'est fiable qu'une fois la restauration testée. La
+   fonction « Vérifier » confirme que les données se trouvent
+   inchangées dans la sauvegarde ; elle ne remplace pas un essai de
+   restauration. Avant de supprimer ou de déplacer des données
+   d'origine, assurez-vous vous-même que les données sauvegardées sont
+   complètes et lisibles.
+
+3. Sauvegardes chiffrées
+   Une sauvegarde chiffrée ne peut être ouverte qu'avec son mot de
+   passe. Sans ce mot de passe, les données sauvegardées ne sont plus
+   accessibles – pas même pour l'auteur du programme. Il n'existe
+   aucun autre moyen. L'indice est enregistré en clair dans le fichier
+   de sauvegarde et peut être lu par toute personne qui possède le
+   fichier.
+
+4. Utilisation sous votre propre responsabilité
+   L'utilisation de l'outil se fait sous votre propre responsabilité.
+   Cela vaut en particulier pour les restaurations qui écrasent des
+   fichiers existants, pour le nettoyage, qui déplace les fichiers
+   obsolètes dans un dossier d'archive, et pour la suppression de
+   sauvegardes : elle est définitive et ne passe pas par la corbeille.
+   Selon le réglage « Conserver », le programme supprime de lui-même
+   les sauvegardes plus anciennes d'un profil. Aucune responsabilité
+   n'est assumée pour les résultats et les décisions fondés sur les
+   opérations ou sur les journaux.
+
+5. Sauvegardes planifiées
+   Les sauvegardes planifiées s'exécutent sans demande de confirmation
+   et uniquement tant que le programme est en cours d'exécution. Les
+   journaux indiquent si une exécution planifiée a eu lieu et si elle
+   était complète. Consultez-les régulièrement.
+
+6. Exclusion de responsabilité
+   Toute responsabilité pour des dommages, des pertes de données ou
+   des préjudices financiers résultant de l'utilisation de l'outil ou
+   de ses résultats est exclue dans les limites permises par la loi.
+
+7. Les sauvegardes restent indispensables
+   Pour vos données importantes, ne vous fiez pas à une seule
+   sauvegarde. Conservez régulièrement, indépendamment de celle-ci,
+   plusieurs copies de sauvegarde distinctes de vos données à des
+   endroits différents.
+
+----------------------------------------------------------------------
+Contact :         tool-entwicklung@sattler-it.de
+Page du projet :  https://sattlerit.github.io/sit-brc/
+----------------------------------------------------------------------
+
+
+======================================================================
+ ESPAÑOL
+======================================================================
+
+LICENCIA - S-IT-BRC
+© 2026 Sattler IT-Service, Greifenstein
+Autor: Hans Udo Sattler
+
+Freeware – uso y distribución gratuitos permitidos.
+No se permite la reutilización comercial ni la modificación sin
+autorización.
+Contacto: tool-entwicklung@sattler-it.de
+
+
+AVISO LEGAL (DISCLAIMER)
+
+Toda la información se facilita sin garantía. Salvo errores u
+omisiones.
+
+S-IT-BRC es una herramienta gratuita para hacer copias de seguridad
+(Backup), restaurar (Restore) y limpiar (Cleanup) datos de usuario. La
+herramienta funciona de forma fiable según nuestro leal saber y
+entender; sin embargo, no se puede asegurar un funcionamiento sin
+errores en todos los sistemas y en todas las configuraciones.
+
+1. Sin garantía de integridad
+   Las copias de seguridad y las restauraciones no garantizan que
+   todos los archivos se hayan copiado o restaurado de forma completa,
+   sin cambios y sin errores. Problemas de red, unidades inaccesibles,
+   archivos bloqueados, archivos que solo están en línea en un
+   almacenamiento en la nube, espacio insuficiente o errores del
+   sistema pueden afectar o impedir determinadas operaciones.
+
+2. Compruebe sus copias de seguridad
+   Una copia de seguridad solo es fiable cuando se ha probado la
+   restauración. La función «Verificar» confirma que los datos están
+   sin cambios en la copia; no sustituye a una prueba de restauración.
+   Antes de eliminar o trasladar datos originales, asegúrese usted
+   mismo de que los datos copiados están completos y se pueden leer.
+
+3. Copias cifradas
+   Una copia cifrada solo se puede abrir con su contraseña. Sin esta
+   contraseña ya no es posible acceder a los datos copiados – tampoco
+   para el autor del programa. No existe ningún otro camino. La
+   sugerencia se guarda sin cifrar en el archivo de copia y puede
+   leerla cualquiera que tenga el archivo.
+
+4. Uso bajo su propia responsabilidad
+   El uso de la herramienta corre por su propia cuenta. Esto vale en
+   especial para las restauraciones que sobrescriben archivos
+   existentes, para la limpieza, que mueve los archivos antiguos a una
+   carpeta de depósito, y para la eliminación de copias: es definitiva
+   y no pasa por la papelera. Según el ajuste «Conservar», el programa
+   elimina por sí mismo las copias anteriores de un perfil. No se
+   asume responsabilidad alguna por los resultados ni por las
+   decisiones que se tomen a partir de las operaciones o de los
+   registros.
+
+5. Copias según una programación
+   Las copias programadas se ejecutan sin pregunta de confirmación y
+   solo mientras el programa está en marcha. Los registros muestran si
+   una ejecución programada ha tenido lugar y si ha sido completa.
+   Revíselos con regularidad.
+
+6. Exclusión de responsabilidad
+   Queda excluida, en la medida en que lo permita la ley, toda
+   responsabilidad por daños, pérdidas de datos o perjuicios
+   económicos derivados del uso de la herramienta o de sus resultados.
+
+7. Las copias de seguridad siguen siendo imprescindibles
+   Para los datos importantes, no confíe únicamente en una sola copia
+   de seguridad. Con independencia de ella, conserve con regularidad
+   varias copias separadas de sus datos en lugares distintos.
+
+----------------------------------------------------------------------
+Contacto:             tool-entwicklung@sattler-it.de
+Página del proyecto:  https://sattlerit.github.io/sit-brc/
+----------------------------------------------------------------------
+
+
+======================================================================
+ NEDERLANDS
+======================================================================
+
+LICENTIE - S-IT-BRC
+© 2026 Sattler IT-Service, Greifenstein
+Auteur: Hans Udo Sattler
+
+Freeware – gratis gebruik en verspreiding toegestaan.
+Commercieel hergebruik of wijziging zonder toestemming is niet
+toegestaan.
+Contact: tool-entwicklung@sattler-it.de
+
+
+DISCLAIMER
+
+Alle gegevens onder voorbehoud. Vergissingen voorbehouden.
+
+S-IT-BRC is een gratis hulpprogramma voor het back-uppen (Backup),
+terugzetten (Restore) en opschonen (Cleanup) van gebruikersgegevens.
+Het programma werkt naar beste weten betrouwbaar; een foutloze werking
+op elk systeem en in elke situatie kan echter niet worden
+gegarandeerd.
+
+1. Geen garantie op volledigheid
+   Back-ups en terugzetacties zijn geen garantie dat alle bestanden
+   volledig, ongewijzigd en foutloos zijn opgeslagen of teruggezet.
+   Netwerkproblemen, onbereikbare stations, vergrendelde bestanden,
+   bestanden die alleen online in een cloudopslag staan, onvoldoende
+   schijfruimte of systeemfouten kunnen afzonderlijke acties verstoren
+   of verhinderen.
+
+2. Controleer uw back-ups
+   Een back-up is pas betrouwbaar als het terugzetten is getest. De
+   functie „Controleren” bevestigt dat de gegevens ongewijzigd in de
+   back-up staan; een terugzettest vervangt ze niet. Overtuig uzelf
+   ervan dat de opgeslagen gegevens volledig en leesbaar zijn voordat
+   u oorspronkelijke gegevens verwijdert of verplaatst.
+
+3. Versleutelde back-ups
+   Een versleutelde back-up kan alleen met het bijbehorende wachtwoord
+   worden geopend. Zonder dit wachtwoord zijn de opgeslagen gegevens
+   niet meer toegankelijk – ook niet voor de auteur van het programma.
+   Er is geen andere weg. De wachtwoordhint wordt onversleuteld in het
+   back-upbestand opgeslagen en is leesbaar voor iedereen die het
+   bestand heeft.
+
+4. Gebruik op eigen verantwoordelijkheid
+   Het gebruik van het programma gebeurt op eigen
+   verantwoordelijkheid. Dat geldt in het bijzonder voor
+   terugzetacties die bestaande bestanden overschrijven, voor het
+   opschonen, dat verouderde bestanden naar een archiefmap verplaatst,
+   en voor het verwijderen van back-ups: dat is definitief en gaat
+   niet via de prullenbak. Afhankelijk van de instelling „Bewaren”
+   verwijdert het programma oudere back-ups van een profiel vanzelf.
+   Voor resultaten en beslissingen op basis van de acties of de
+   logboeken wordt geen verantwoordelijkheid aanvaard.
+
+5. Back-ups volgens planning
+   Back-ups volgens planning lopen zonder controlevraag en alleen
+   zolang het programma draait. De logboeken tonen of een geplande
+   uitvoering heeft plaatsgevonden en volledig was. Kijk ze regelmatig
+   na.
+
+6. Uitsluiting van aansprakelijkheid
+   Aansprakelijkheid voor schade, gegevensverlies of financieel nadeel
+   die voortkomen uit het gebruik van het programma of van de
+   resultaten ervan is uitgesloten, voor zover de wet dat toelaat.
+
+7. Back-ups blijven onmisbaar
+   Vertrouw bij belangrijke gegevens niet op één enkele back-up.
+   Bewaar daarnaast regelmatig meerdere, van elkaar gescheiden
+   reservekopieën van uw gegevens op verschillende plaatsen.
+
+----------------------------------------------------------------------
+Contact:        tool-entwicklung@sattler-it.de
+Projectpagina:  https://sattlerit.github.io/sit-brc/
+----------------------------------------------------------------------
+
+
+======================================================================
+ ITALIANO
+======================================================================
+
+LICENZA - S-IT-BRC
+© 2026 Sattler IT-Service, Greifenstein
+Autore: Hans Udo Sattler
+
+Freeware – uso e distribuzione gratuiti consentiti.
+Non è consentito il riutilizzo commerciale né la modifica senza
+autorizzazione.
+Contatto: tool-entwicklung@sattler-it.de
+
+
+ESCLUSIONE DI RESPONSABILITÀ (DISCLAIMER)
+
+Tutti i dati sono forniti senza garanzia. Salvo errori.
+
+S-IT-BRC è uno strumento gratuito per salvare (Backup), ripristinare
+(Restore) e ripulire (Cleanup) i dati utente. Il programma funziona in
+modo affidabile secondo scienza e coscienza; non è tuttavia possibile
+garantire un funzionamento privo di errori su ogni sistema e in ogni
+configurazione.
+
+1. Nessuna garanzia di completezza
+   I backup e i ripristini non garantiscono che tutti i file siano
+   stati salvati o ripristinati in modo completo, immutato e senza
+   errori. Problemi di rete, unità non raggiungibili, file bloccati,
+   file presenti solo online in uno spazio cloud, spazio insufficiente
+   o errori di sistema possono compromettere o impedire singole
+   operazioni.
+
+2. Controlli i suoi backup
+   Un backup è affidabile solo dopo che il ripristino è stato provato.
+   La funzione «Verifica» conferma che i dati si trovano invariati nel
+   backup; non sostituisce una prova di ripristino. Prima di eliminare
+   o spostare i dati originali, si accerti di persona che i dati
+   salvati siano completi e leggibili.
+
+3. Backup crittografati
+   Un backup crittografato si può aprire solo con la sua password.
+   Senza questa password i dati salvati non sono più accessibili –
+   nemmeno per l'autore del programma. Non esiste nessun'altra via. Il
+   suggerimento viene salvato non crittografato nel file di backup ed
+   è leggibile da chiunque possieda il file.
+
+4. Uso sotto la propria responsabilità
+   L'uso del programma avviene sotto la propria responsabilità. Ciò
+   vale in particolare per i ripristini che sovrascrivono file
+   esistenti, per la pulizia, che sposta i file obsoleti in una
+   cartella di archivio, e per l'eliminazione dei backup: è definitiva
+   e non passa dal cestino. A seconda dell'impostazione «Conserva», il
+   programma rimuove da sé i backup meno recenti di un profilo. Non si
+   assume alcuna responsabilità per i risultati e per le decisioni
+   prese in base alle operazioni o ai registri.
+
+5. Backup pianificati
+   I backup pianificati vengono eseguiti senza domanda di conferma e
+   solo finché il programma è in esecuzione. I registri mostrano se
+   un'esecuzione pianificata ha avuto luogo ed è stata completa. Li
+   consulti con regolarità.
+
+6. Esclusione di responsabilità
+   È esclusa, nei limiti consentiti dalla legge, ogni responsabilità
+   per danni, perdite di dati o pregiudizi economici derivanti
+   dall'uso del programma o dei suoi risultati.
+
+7. Le copie di sicurezza restano indispensabili
+   Per i dati importanti non si affidi a un solo backup.
+   Indipendentemente da esso, conservi con regolarità più copie di
+   sicurezza separate dei suoi dati in luoghi diversi.
+
+----------------------------------------------------------------------
+Contatto:  tool-entwicklung@sattler-it.de
+Progetto:  https://sattlerit.github.io/sit-brc/
+----------------------------------------------------------------------
+
+
+======================================================================
+ POLSKI
+======================================================================
+
+LICENCJA - S-IT-BRC
+© 2026 Sattler IT-Service, Greifenstein
+Autor: Hans Udo Sattler
+
+Freeware – dozwolone bezpłatne użytkowanie i rozpowszechnianie.
+Komercyjne ponowne wykorzystanie lub modyfikacja bez zgody jest
+zabronione.
+Kontakt: tool-entwicklung@sattler-it.de
+
+
+ZRZECZENIE SIĘ ODPOWIEDZIALNOŚCI (DISCLAIMER)
+
+Wszystkie dane są podawane bez gwarancji. Zastrzega się możliwość
+błędów.
+
+S-IT-BRC to darmowe narzędzie do tworzenia kopii zapasowych (Backup),
+przywracania (Restore) i porządkowania (Cleanup) danych użytkownika.
+Narzędzie działa niezawodnie zgodnie z najlepszą wiedzą, ale nie można
+zagwarantować bezbłędnego działania na każdym systemie i w każdej
+konfiguracji.
+
+1. Brak gwarancji kompletności
+   Tworzenie kopii i przywracanie nie są gwarancją, że wszystkie pliki
+   zostały zapisane lub przywrócone w całości, bez zmian i bez błędów.
+   Problemy sieciowe, niedostępne dyski, zablokowane pliki, pliki
+   znajdujące się wyłącznie online w chmurze, brak miejsca lub błędy
+   systemowe mogą zakłócić lub uniemożliwić poszczególne operacje.
+
+2. Sprawdzaj swoje kopie
+   Utworzona kopia zapasowa jest wiarygodna dopiero wtedy, gdy
+   przetestowano przywracanie. Funkcja „Sprawdź” potwierdza, że dane
+   znajdują się w kopii w niezmienionej postaci; nie zastępuje próby
+   przywracania. Przed usunięciem lub przeniesieniem danych źródłowych
+   upewnij się samodzielnie, że zapisane dane są kompletne i dają się
+   odczytać.
+
+3. Zaszyfrowane kopie
+   Zaszyfrowaną kopię można otworzyć tylko jej hasłem. Bez tego hasła
+   zapisane dane nie są już dostępne – także dla autora programu. Nie
+   ma żadnej innej drogi. Wskazówka jest zapisywana w pliku kopii w
+   postaci niezaszyfrowanej i może ją przeczytać każdy, kto ma ten
+   plik.
+
+4. Użytkowanie na własną odpowiedzialność
+   Korzystanie z narzędzia odbywa się na własną odpowiedzialność.
+   Dotyczy to zwłaszcza przywracania, które nadpisuje istniejące
+   pliki, czyszczenia, które przenosi nieaktualne pliki do folderu
+   archiwum, oraz usuwania kopii: jest ono ostateczne i nie trafia do
+   kosza. Zależnie od ustawienia „Zachowaj” program samoczynnie usuwa
+   starsze kopie danego profilu. Nie ponosi się odpowiedzialności za
+   wyniki i decyzje podjęte na podstawie operacji lub dzienników.
+
+5. Kopie według harmonogramu
+   Kopie według harmonogramu wykonują się bez pytania o potwierdzenie
+   i tylko wtedy, gdy program działa. Dzienniki pokazują, czy
+   zaplanowany przebieg się odbył i czy był kompletny. Przeglądaj je
+   regularnie.
+
+6. Wyłączenie odpowiedzialności
+   Odpowiedzialność za szkody, utratę danych lub straty finansowe
+   wynikające z korzystania z narzędzia lub jego wyników jest
+   wyłączona w zakresie dozwolonym przez prawo.
+
+7. Kopie zapasowe pozostają niezbędne
+   W przypadku ważnych danych nie polegaj wyłącznie na jednej kopii.
+   Niezależnie od niej regularnie przechowuj kilka oddzielnych kopii
+   zapasowych swoich danych w różnych miejscach.
+
+----------------------------------------------------------------------
+Kontakt:          tool-entwicklung@sattler-it.de
+Strona projektu:  https://sattlerit.github.io/sit-brc/
+----------------------------------------------------------------------
+
+
+======================================================================
+ HRVATSKI
+======================================================================
+
+LICENCA - S-IT-BRC
+© 2026 Sattler IT-Service, Greifenstein
+Autor: Hans Udo Sattler
+
+Freeware – dozvoljeno besplatno korištenje i daljnje dijeljenje.
+Komercijalna daljnja upotreba ili izmjena bez dozvole nije dozvoljena.
+Kontakt: tool-entwicklung@sattler-it.de
+
+
+ODRICANJE OD ODGOVORNOSTI (DISCLAIMER)
+
+Sve informacije su dane bez jamstva. Moguće su greške.
+
+S-IT-BRC je besplatni alat za izradu sigurnosnih kopija (Backup),
+vraćanje (Restore) i čišćenje (Cleanup) korisničkih podataka. Alat
+radi pouzdano prema najboljem saznanju, ali se ne može jamčiti potpuno
+ispravan rad na svakom sustavu i u svakoj konfiguraciji.
+
+1. Bez jamstva potpunosti
+   Izrada kopija i vraćanje ne jamče da su sve datoteke spremljene
+   odnosno vraćene u potpunosti, nepromijenjene i bez grešaka. Mrežni
+   problemi, nedostupni pogoni, zaključane datoteke, datoteke koje se
+   nalaze samo na mreži u pohrani u oblaku, nedovoljno prostora ili
+   pogreške sustava mogu utjecati na pojedine postupke ili ih
+   spriječiti.
+
+2. Provjeravajte svoje kopije
+   Izrađena sigurnosna kopija pouzdana je tek kada je vraćanje
+   isprobano. Funkcija „Provjeri“ potvrđuje da se podaci
+   nepromijenjeni nalaze u kopiji; probno vraćanje ne zamjenjuje.
+   Prije brisanja ili premještanja izvornih podataka sami se uvjerite
+   da su spremljeni podaci potpuni i čitljivi.
+
+3. Šifrirane kopije
+   Šifrirana kopija može se otvoriti samo svojom lozinkom. Bez te
+   lozinke spremljeni podaci više nisu dostupni – ni autoru programa.
+   Nema drugog puta. Podsjetnik se sprema nešifriran u datoteku kopije
+   i može ga pročitati svatko tko ima tu datoteku.
+
+4. Korištenje na vlastitu odgovornost
+   Korištenje alata vrši se na vlastitu odgovornost. To osobito
+   vrijedi za vraćanje koje prepisuje postojeće datoteke, za čišćenje,
+   koje zastarjele datoteke premješta u mapu arhive, te za brisanje
+   kopija: ono je konačno i ne ide u koš za smeće. Ovisno o postavci
+   „Čuvaj“ program sam uklanja starije kopije nekog profila. Za
+   rezultate i odluke donesene na temelju postupaka ili zapisnika ne
+   preuzima se odgovornost.
+
+5. Kopije prema rasporedu
+   Kopije prema rasporedu izvode se bez potvrdnog pitanja i samo dok
+   program radi. Zapisnici pokazuju je li planirano izvođenje održano
+   i je li bilo potpuno. Redovito ih pregledavajte.
+
+6. Isključenje odgovornosti
+   Odgovornost za štetu, gubitak podataka ili financijsku štetu koja
+   proizlazi iz korištenja alata ili njegovih rezultata isključena je
+   u mjeri dopuštenoj zakonom.
+
+7. Sigurnosne kopije ostaju neophodne
+   Kod važnih podataka ne oslanjajte se samo na jednu jedinu kopiju.
+   Neovisno o njoj redovito čuvajte više međusobno odvojenih
+   sigurnosnih kopija svojih podataka na različitim mjestima.
+
+----------------------------------------------------------------------
+Kontakt:            tool-entwicklung@sattler-it.de
+Stranica projekta:  https://sattlerit.github.io/sit-brc/
+----------------------------------------------------------------------
