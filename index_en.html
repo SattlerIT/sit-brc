@@ -93,6 +93,10 @@
       padding: 1px 7px; border-radius: 10px; vertical-align: middle; margin-left: 4px;
     }
 
+    /* ── VIDEO ── */
+    .video-box { margin-bottom: 32px; border-radius: 6px; overflow: hidden; border: 1px solid var(--border); box-shadow: 0 2px 8px rgba(0,0,0,.08); background: #000; }
+    .video-box video { width: 100%; display: block; }
+
     /* ── SCREENSHOT GALLERY ── */
     .gallery { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 32px; }
     .gallery-item {
@@ -213,6 +217,15 @@
 </div>
 
 <main>
+
+  <!-- VIDEO -->
+  <div class="section-title">🎬 S-IT-BRC 4.0 in 96 seconds</div>
+  <div class="video-box">
+    <video controls preload="none" poster="Video_en/S-IT-BRC-4.0-Clip-EN.jpg">
+      <source src="Video_en/S-IT-BRC-4.0-Clip-EN.mp4" type="video/mp4">
+      Your browser cannot play this video. <a href="Video_en/S-IT-BRC-4.0-Clip-EN.mp4">Download the video</a>.
+    </video>
+  </div>
 
   <!-- FEATURES -->
   <div class="section-title">⚙ Features</div>
