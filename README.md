@@ -1,63 +1,79 @@
 # S-IT-BRC – Backup • Restore • Cleanup
 
-Benutzerdaten sichern, wiederherstellen und inkrementelle Backups bereinigen.
+🇩🇪 [Diese Seite auf Deutsch](README_DE.md)
 
-Entwickelt von **Hans Udo Sattler · Sattler IT-Service, Greifenstein**
+Back up your user data, restore it and tidy up your backups — as a file backup or as a backup to a single file, encrypted if you wish.
+
+Developed by **Hans Udo Sattler · Sattler IT-Service, Greifenstein**
+
+Current version: **v4.0** · Freeware · Windows 10 / 11
+
+![S-IT-BRC – Overview](Screenshots/screenshot-overview-en.png)
 
 ---
 
-## Module
+## What it does
 
 ### 💾 Backup
-Sichert persönliche Benutzerdaten (Desktop, Dokumente, Bilder, Musik, Videos, Downloads, AppData) auf ein externes Laufwerk – wahlweise inkrementell oder als vollständiges Archiv-Backup.
+Backs up your personal data (Desktop, Documents, Pictures, Music, Videos, Downloads, AppData), OneDrive and up to seven additional folders to another drive. For each profile you choose the type:
+
+- **File backup** — your files are copied individually into folders on the target drive. Every file can be seen there in Explorer and opened without BRC.
+- **Backup (.brc)** — everything is stored in a single file, encrypted with a password (AES-256) if you wish and with several versions. Inside, it is a standard ZIP archive.
+
+A schedule runs your backups automatically — daily, weekly, monthly or at intervals.
+
+![Backup page](Screenshots/screenshot-backup-en.png)
 
 ### 🔄 Restore
-Stellt Daten aus einem Backup wieder her – in die Originalordner, in ein frei wählbares Zielverzeichnis, auf einen anderen PC oder direkt von einer ausgebauten Festplatte.
+Restores data from a backup — to the original location, to another system or to a freely selectable target folder. From a Backup (.brc) you restore individual folders or files without unpacking the whole backup.
 
-### 🧹 Cleanup
-Bereinigt inkrementelle Backups von veralteten Dateien. Simulation vor dem echten Lauf möglich. Veraltete Dateien werden sicher in einen Archivordner verschoben, nicht gelöscht.
+![Restore page](Screenshots/screenshot-restore-en.png)
 
-## Systemanforderungen
+### 🗄️ Cleanup
+For the file backup, Cleanup moves files that no longer exist on the PC into an archive folder — with a simulation before the real run. For Backups (.brc) it shows your backups and removes those you no longer need.
 
-- Windows 10 oder Windows 11 (64-Bit)
-- Administratorrechte werden beim Programmstart automatisch angefordert
+![Cleanup page](Screenshots/screenshot-cleanup-en.png)
 
-## Installation
+## Languages
 
-Das Setup (`S-IT-BRC-Setup.exe`) installiert das Programm wahlweise:
-- **Festplatte** – mit Desktop-Verknüpfung, Startmenü-Eintrag und Deinstallations-Eintrag
-- **Portabel** – auf USB-Stick oder beliebigen Ordner, ohne Systemeinträge
+Program and help are available in Deutsch, English, Français, Español, Nederlands, Italiano, Polski and Hrvatski. A manual in German and in English is included as a PDF.
 
-## Download
+## System requirements
 
-Aktuelle Version im [Release-Bereich](https://github.com/SattlerIT/sit-brc/releases).
+- Windows 10 or Windows 11 (64-bit)
+- The setup requests administrator rights
 
-> **Hinweis:** Windows SmartScreen oder Virenscanner können beim ersten Start anschlagen.  
-> Dies ist ein bekanntes False Positive bei unabhängig entwickelten Windows-Tools.  
-> Alle Dateien stammen ausschließlich von dieser offiziellen GitHub-Seite.
+## Download and installation
 
-## Erwähnungen
+The current version is in the [release area](https://github.com/SattlerIT/sit-brc/releases/latest).
+
+The download `sit-brc-V-4_latest.zip` contains the setup and the program archive. Please unpack the zip completely and start `S-IT-BRC-Setup.exe`.
+
+- **Install** — with shortcuts and an entry in the Control Panel
+- **Portable** — into a folder of your choice, for example on a USB stick
+
+> **Note:** Windows SmartScreen or a virus scanner may respond at the first start.  
+> This is a known false positive with independently developed Windows tools.  
+> All files come exclusively from this official GitHub page.
+
+## More information
+
+- [Project page](https://sattlerit.github.io/sit-brc/)
+- [Changelog](CHANGELOG.md)
+- [All S-IT tools](https://sattlerit.github.io/sattlerit-tools/)
+
+## Mentions
 
 - [Deskmodder.de](https://www.deskmodder.de/blog/2026/04/09/s-it-brc-backup-programm-mit-backup-restore-und-auch-einem-cleanup-tool/)
 
-## Verwendete Komponenten
+## Licence
 
-Dieses Programm verwendet **7-Zip** (als `S-IT-Expand.exe`) von Igor Pavlov zur Entpackung des Setup-Archivs.
+© 2026 Sattler IT-Service, Greifenstein · Hans Udo Sattler  
+This program is freeware for non-commercial use.  
+Passing it on in modified form or modifying it is not permitted without express permission.
 
-- 7-Zip ist lizenziert unter der **GNU LGPL** und weiteren Open-Source-Lizenzen
-- Lizenztext: siehe [`7zip-License.txt`](./7zip-License.txt) in diesem Repository
-- Projektseite: https://www.7-zip.org
-
-## Lizenz
-
-© 2026 Hans Udo Sattler · Sattler IT-Service, Greifenstein  
-Dieses Programm ist Freeware und darf kostenlos genutzt werden.  
-Eine Weitergabe oder Veränderung ist ohne ausdrückliche Genehmigung nicht gestattet.
-
-## Kontakt
+## Contact
 
 **Sattler IT-Service**  
 Hans Udo Sattler · Greifenstein  
-kontakt@sattler-it.de  
-http://sattler-it.de
-
+tool-entwicklung@sattler-it.de
